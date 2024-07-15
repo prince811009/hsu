@@ -640,6 +640,13 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	text-transform: uppercase;
 	color: #fff;
 }
+.featured-collections-item .caption p{
+	font-size: 12px;
+	letter-spacing: 4px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+}
 .featured-collections-item .caption h3:before, .featured-collections-item .caption h3:after{
 	content:"";
     vertical-align:top;
@@ -743,6 +750,7 @@ h3.ws-item-title{
 	letter-spacing: 1px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin: 5px 0px;
 }
 .ws-item-price{
 	color: #999;	
