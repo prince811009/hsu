@@ -2213,7 +2213,9 @@ ul.ws-footer-payments li{
 	.ws-shop-cart .btn{background-color: transparent;}
 	.ws-shop-cart .btn:hover{background-color: transparent;}
 	.ws-hero-title h1{font-size: 26px;letter-spacing: 1px;padding-bottom: 70px; text-align: center;}
-	.ws-hero-description h4{display: none;}
+	.ws-hero-description h4{
+		display: none;
+	}
 	.ws-3d-title{text-align: center;}
 }
 @media screen and (min-width: 768px){
