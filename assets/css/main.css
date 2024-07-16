@@ -2142,13 +2142,19 @@ ul.ws-footer-payments li{
 	.ws-center{position: relative;top: 0;left: 0;-webkit-transform: none;-ms-transform: none;transform: none;}
 	.ws-header-static{padding: 15px 0 0 0;}
 	.ws-header-transparent{padding: 15px 0 0 0;}
-	.ws-logo{padding-bottom: 8px;}
+	.ws-logo{
+		padding-bottom: 8px;
+		display: none;
+	}
 	.ws-cart-page .col-sm-8, .ws-cart-page .col-sm-4{width: 100%;}	
 	.ws-header-third .ws-navbar .navbar-nav li {padding: 8px 25px;}
 }
 
 @media only screen and (max-width : 768px) {
-	.ws-logo {padding-bottom: 0;}
+	.ws-logo {
+		padding-bottom: 0;
+		display: none;
+	}
 	.row{margin: 0;}
 	#ws-items-carousel .owl-controls{top: 43%;}
 	.featured-collections-item{padding-bottom: 10px;}
@@ -2212,9 +2218,13 @@ ul.ws-footer-payments li{
 	.ws-subscribe-content .form-inline .form-control, .ws-btn-subscribe{width: 100%;}
 	.ws-shop-cart .btn{background-color: transparent;}
 	.ws-shop-cart .btn:hover{background-color: transparent;}
-	.ws-hero-title h1{font-size: 26px;letter-spacing: 1px;padding-bottom: 70px; text-align: center;}
+	.ws-hero-title h1{
+		font-size: 26px;letter-spacing: 1px;padding-bottom: 50px; text-align: center;
+	}
 	.ws-hero-description h4{
-		display: none;
+		/* display: none; */
+		font-size: 16px;letter-spacing: 1px;padding-bottom: 70px; text-align: center;
+
 	}
 	.ws-3d-title{text-align: center;}
 }
