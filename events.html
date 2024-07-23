@@ -68,6 +68,29 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #more {display: none;}
+    </style>
+
 </head>
     <body>
     <!--[if lt IE 8]>
@@ -204,10 +227,10 @@
                 <!-- Description -->
                 <div class="ws-about-content clearfix">
                     <div class="col-sm-10 col-sm-offset-1">
-                        <h3>經歷</h3> 
+                        <h3>演出經歷</h3> 
                         <div class="ws-separator"></div>   
                         <p>
-                            美國地區則有「Sing for Holp」於New York Port Authority發表鋼琴獨奏會、美國史蒂芬斯大學新春音樂會（NJ , Hoboken , Stevens University, Spring Festival）、New York Kuafman Hall 鋼琴音樂會。
+                            美國地區有「Sing for Holp」於New York Port Authority發表鋼琴獨奏會、美國史蒂芬斯大學新春音樂會（NJ , Hoboken , Stevens University, Spring Festival）、New York Kuafman Hall 鋼琴音樂會。
                         </p>
                         <br>
                         <p>
@@ -242,254 +265,6 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="all">   
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">                    
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/1.png" alt="2018Atune「Fantacy Music from Formosa」新年公益音樂會海報" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2018 Atune「Fantacy Music from Formosa」</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">新年公益音樂會</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <!-- Image -->                        
-                            <figure>                            
-                                <img src="assets/img/events/2.png" alt="20180823商業演講" class="img-responsive">
-                            </figure>
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2018</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">商業演講</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/3.png" alt="20190921東南旅行社中秋晚會邀請" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2019</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">東南旅行社中秋晚會邀請</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-6 ws-works-item">
-                            <!-- Image -->                        
-                            <figure>                            
-                                <img src="assets/img/events/4.png" alt="20190908萍蓬草兒童劇團" class="img-responsive">
-                            </figure>
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2019</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">萍蓬草兒童劇團</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-6 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/5.png" alt="20191125萍蓬草兒童劇團「咕咕精與小老頭」、1895乙未彰化之役紀念兒童劇「勇敢傳說」兒童劇音樂創作" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2019</div>
-
-                                <!-- Title -->
-                                <h5 class="ws-item-title">萍蓬草兒童劇團「咕咕精與小老頭」、1895乙未彰化之役紀念兒童劇「勇敢傳說」兒童劇音樂創作</h5>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">                      
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/6.png" alt="20230318新竹市圖書館主題書展「躍動之春」" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">新竹市圖書館主題書展「躍動之春」</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/7.png" alt="20230429【與孩子最親密的親子音樂律動互動時光】海報" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">【與孩子最親密的親子音樂律動互動時光】</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/8.png" alt="20230620【與孩子最親密的親子音樂律動互動時光】" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">【與孩子最親密的親子音樂律動互動時光】</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/9.png" alt="20230731sdgs新竹市圖書館主題書展合作" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">新竹市圖書館主題書展合作</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <!-- Image -->                        
-                            <figure>                            
-                                <img src="assets/img/events/10.png" alt="20231022孩子的音樂會：用音樂與繪畫，認識情緒—講座音樂會" class="img-responsive">
-                            </figure>
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">孩子的音樂會：用音樂與繪畫，認識情緒—講座音樂會</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-4 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/11.png" alt="20230814朗朗小書房愛閱愛樂暑期營隊" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">朗朗小書房愛閱愛樂暑期營隊</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-6 ws-works-item">
-                            <!-- Image -->                        
-                            <figure>                            
-                                <img src="assets/img/events/12.png" alt="20240504YAMAHA台北講座" class="img-responsive">
-                            </figure>
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2024</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">YAMAHA 台北講座</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-6 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/events/13.png" alt="20231117週五英文夜" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">2023</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">週五英文夜</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
                         <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
@@ -503,9 +278,25 @@
                                 <div class="ws-item-category">2024</div>
 
                                 <!-- Title -->
-                                <h4 class="ws-item-title">嘖嘖募資</h4>                        
+                                <h5 class="ws-item-title">嘖嘖募資</h5>
 
                                 <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <!-- Image -->                        
+                            <figure>                            
+                                <img src="assets/img/events/12.png" alt="20240504YAMAHA台北講座" class="img-responsive">
+                            </figure>
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">2024</div>
+
+                                <!-- Title -->
+                                <h5 class="ws-item-title">YAMAHA 台北講座</h5>
+                                <div class="ws-item-separator"></div>    
                             </div>
                         </div>
 
@@ -523,7 +314,7 @@
                                 <div class="ws-item-category">2024</div>
 
                                 <!-- Title -->
-                                <h4 class="ws-item-title">YAMAHA 高雄講座</h4>                        
+                                <h5 class="ws-item-title">YAMAHA 高雄講座</h5>
 
                                 <div class="ws-item-separator"></div>   
                             </div>
@@ -543,11 +334,255 @@
                                 <div class="ws-item-category">2024</div>
 
                                 <!-- Title -->
-                                <h4 class="ws-item-title">YAMAHA 台北講座</h4>                        
+                                <h5 class="ws-item-title">YAMAHA 台北講座</h5>
 
                                 <div class="ws-item-separator"></div>   
                             </div>
                         </div>  
+
+
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/events/13.png" alt="20231117週五英文夜" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">2023</div>
+
+                                <!-- Title -->
+                                <h5 class="ws-item-title">週五英文夜</h5>
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/events/8.png" alt="20230620【與孩子最親密的親子音樂律動互動時光】" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">2023</div>
+
+                                <!-- Title -->
+                                <h5 class="ws-item-title">【與孩子最親密的親子音樂律動互動時光】</h5>
+                                <!-- load more -->
+                                <p><span id="dots"></span></p>                        
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <div id="more">
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/7.png" alt="20230429【與孩子最親密的親子音樂律動互動時光】海報" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2023</div>
+
+                                    <!-- Title -->
+                                    <h6 class="ws-item-title">【與孩子最親密的親子音樂律動互動時光】</h6>
+
+
+                                    <div class="ws-item-separator"></div>   
+                                </div>
+                            </div>
+                            
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">                      
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/6.png" alt="20230318新竹市圖書館主題書展「躍動之春」" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2023</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">新竹市圖書館主題書展「躍動之春」</h5>                        
+
+                                    <div class="ws-item-separator"></div>   
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/9.png" alt="20230731sdgs新竹市圖書館主題書展合作" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2023</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">新竹市圖書館主題書展合作</h5>                        
+
+                                    <div class="ws-item-separator"></div>    
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/events/10.png" alt="20231022孩子的音樂會：用音樂與繪畫，認識情緒—講座音樂會" class="img-responsive">
+                                </figure>
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2023</div>
+
+                                    <!-- Title -->
+                                    <h6 class="ws-item-title">孩子的音樂會：用音樂與繪畫，認識情緒—講座音樂會</h6>                        
+
+                                    <div class="ws-item-separator"></div>    
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/11.png" alt="20230814朗朗小書房愛閱愛樂暑期營隊" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2023</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">朗朗小書房愛閱愛樂暑期營隊</h5>                        
+
+                                    <div class="ws-item-separator"></div>   
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/events/4.png" alt="20190908萍蓬草兒童劇團" class="img-responsive">
+                                </figure>
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2019</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">萍蓬草兒童劇團</h5>                        
+
+                                    <div class="ws-item-separator"></div>    
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/3.png" alt="20190921東南旅行社中秋晚會邀請" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2019</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">東南旅行社中秋晚會邀請</h5>                        
+
+                                    <div class="ws-item-separator"></div>   
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">                    
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/1.png" alt="2018Atune「Fantacy Music from Formosa」新年公益音樂會海報" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2018 Atune「Fantacy Music from Formosa」</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">新年公益音樂會</h5>                        
+
+                                    <div class="ws-item-separator"></div>    
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <div class="ws-item-offer">
+                                    <!-- Image -->                        
+                                    <figure>                            
+                                        <img src="assets/img/events/5.png" alt="20191125萍蓬草兒童劇團「咕咕精與小老頭」、1895乙未彰化之役紀念兒童劇「勇敢傳說」兒童劇音樂創作" class="img-responsive">
+                                    </figure>                    
+                                </div>
+
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2019</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">萍蓬草兒童劇團「咕咕精與小老頭」、1895乙未彰化之役紀念兒童劇「勇敢傳說」兒童劇音樂創作</h5>                        
+
+                                    <div class="ws-item-separator"></div>   
+                                </div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="col-sm-6 col-md-4 ws-works-item">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/events/2.png" alt="20180823商業演講" class="img-responsive">
+                                </figure>
+                                <div class="ws-works-caption text-center">
+                                    <!-- Item Category -->
+                                    <div class="ws-item-category">2018</div>
+
+                                    <!-- Title -->
+                                    <h5 class="ws-item-title">商業演講</h5>                        
+
+                                    <div class="ws-item-separator"></div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ws-more-btn-holder col-sm-12">
+                            <a style="outline: none;">
+                                <button class="btn ws-more-btn" onclick="myFunction()" id="myBtn">Load more</button>
+                            </a>
+                        </div>
                  
                     </div>
 
@@ -746,5 +781,7 @@
     <script src="assets/js/plugins/scrollReveal.min.js"></script>
     <script src="assets/js/plugins/bootstrap-dropdownhover.min.js"></script>
     <script src="assets/js/main.js"></script>
-    </body>
+
+
+     </body>
 </html>

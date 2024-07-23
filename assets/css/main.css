@@ -35,10 +35,12 @@ Table of Contents:
 	1) GENERAL STYLES
 ---------------------------------------*/
 body{		
-	font-family: 'Merriweather', serif;		
-	color: #999;	    
+	font-family: 'Merriweather', serif;
+	/* color: #999;	    */
+	font-size: 15px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;	
+	outline: none;
 }
 h1, h2, h3, h4, h5, h6{		
 	letter-spacing: 1.5px;
@@ -64,13 +66,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .ws-contact-offices .caption strong, .ws-journal-page .nav-tabs li a, .ws-journal-pagination .pager li>a, .ws-shop-page .nav-tabs li a, 
 .ws-faq-page .nav-tabs li a, .ws-login-form, .ws-register-form, .ws-breadcrumb, .ws-mycart-content thead th, .ws-mycart-total, 
 .ws-mycart-content .ws-coupon-code input, .ws-checkout-billing label, .ws-checkout-order, .ws-3d-title{
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+	font-family: 'Merriweather', serif;
 }
 .ws-hero-description h4, span.minicart-content-price, .ws-about-team .caption h5, .ws-forgot-pass a, .ws-register-link a, 
 .ws-mycart-content .cart-item-title h3{
 	/* font-family: 'Merriweather', serif;	*/
-	font-family: 'futura-pt';
-
+	/* font-family: 'futura-pt'; */
+	font-family: 'Merriweather', serif;
 }
 
 /* Buttons */
@@ -555,7 +558,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	color: #fff;
 	font-size: 32px;	
 	text-transform: uppercase;
-	font-family: 'futura-pt';
+	/* font-family: 'futura-pt'; */
+	font-family: 'Merriweather', serif;
 }
 .ws-hero-description h4{
 	color: #fff;
@@ -641,7 +645,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	color: #fff;
 }
 .featured-collections-item .caption p{
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 4px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -2231,3 +2235,117 @@ ul.ws-footer-payments li{
 @media screen and (min-width: 768px){
    	.rwd-break { display: none;}
 }
+
+
+/*--------------------------------------
+	16) Blockquote STYLES
+---------------------------------------*/
+
+div:has(> blockquote) {
+	background-color: #ededed;
+	margin: 10px auto;
+	padding: 15px;
+	border-radius: 5px;
+  }
+  
+  blockquote p::before {
+	content: '\201C';
+  }
+  
+  blockquote p::after {
+	content: '\201D';
+  }
+  
+  blockquote + p {
+	text-align: right;
+  }
+
+/*------------------------------------
+  Blockquote
+------------------------------------*/
+.blockquote {
+	position: relative;
+	color: #000000;
+  }
+  .blockquote::before {
+	position: absolute;
+	top: -2rem;
+	left: -1.5rem;
+	width: 4rem;
+	height: 4rem;
+	background-image: url("data:image/svg+xml,%3csvg width='5' height='4' viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.244 2.84803C2.244 3.08003 2.168 3.26803 2.016 3.41203C1.864 3.54803 1.672 3.61603 1.44 3.61603C1.16 3.61603 0.927996 3.52403 0.743996 3.34003C0.567996 3.15603 0.479996 2.89203 0.479996 2.54803C0.479996 2.18003 0.583996 1.82003 0.791996 1.46803C1.008 1.10803 1.308 0.824028 1.692 0.616028L1.968 1.03603C1.76 1.18003 1.592 1.34003 1.464 1.51603C1.344 1.69203 1.264 1.89603 1.224 2.12803C1.296 2.09603 1.38 2.08003 1.476 2.08003C1.7 2.08003 1.884 2.15203 2.028 2.29603C2.172 2.44003 2.244 2.62403 2.244 2.84803ZM4.452 2.84803C4.452 3.08003 4.376 3.26803 4.224 3.41203C4.072 3.54803 3.88 3.61603 3.648 3.61603C3.368 3.61603 3.136 3.52403 2.952 3.34003C2.776 3.15603 2.688 2.89203 2.688 2.54803C2.688 2.18003 2.792 1.82003 3 1.46803C3.216 1.10803 3.516 0.824028 3.9 0.616028L4.176 1.03603C3.968 1.18003 3.8 1.34003 3.672 1.51603C3.552 1.69203 3.472 1.89603 3.432 2.12803C3.504 2.09603 3.588 2.08003 3.684 2.08003C3.908 2.08003 4.092 2.15203 4.236 2.29603C4.38 2.44003 4.452 2.62403 4.452 2.84803Z' fill='%232d374b' fill-opacity='.125'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	content: "";
+  }
+  
+  .blockquote-footer {
+	font-weight: 800;
+	line-height: normal;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+  }
+  .blockquote-footer::before {
+	content: "";
+  }
+  
+  .blockquote-footer-source {
+	display: block;
+	color: #677788;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	margin-top: 0.25rem;
+  }
+  
+  .blockquote-light blockquote,
+  .blockquote-light .blockquote {
+	color: #fff;
+  }
+  .blockquote-light blockquote::before,
+  .blockquote-light .blockquote::before {
+	background-image: url("data:image/svg+xml,%3csvg width='5' height='4' viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.244 2.84803C2.244 3.08003 2.168 3.26803 2.016 3.41203C1.864 3.54803 1.672 3.61603 1.44 3.61603C1.16 3.61603 0.927996 3.52403 0.743996 3.34003C0.567996 3.15603 0.479996 2.89203 0.479996 2.54803C0.479996 2.18003 0.583996 1.82003 0.791996 1.46803C1.008 1.10803 1.308 0.824028 1.692 0.616028L1.968 1.03603C1.76 1.18003 1.592 1.34003 1.464 1.51603C1.344 1.69203 1.264 1.89603 1.224 2.12803C1.296 2.09603 1.38 2.08003 1.476 2.08003C1.7 2.08003 1.884 2.15203 2.028 2.29603C2.172 2.44003 2.244 2.62403 2.244 2.84803ZM4.452 2.84803C4.452 3.08003 4.376 3.26803 4.224 3.41203C4.072 3.54803 3.88 3.61603 3.648 3.61603C3.368 3.61603 3.136 3.52403 2.952 3.34003C2.776 3.15603 2.688 2.89203 2.688 2.54803C2.688 2.18003 2.792 1.82003 3 1.46803C3.216 1.10803 3.516 0.824028 3.9 0.616028L4.176 1.03603C3.968 1.18003 3.8 1.34003 3.672 1.51603C3.552 1.69203 3.472 1.89603 3.432 2.12803C3.504 2.09603 3.588 2.08003 3.684 2.08003C3.908 2.08003 4.092 2.15203 4.236 2.29603C4.38 2.44003 4.452 2.62403 4.452 2.84803Z' fill='%23fff' fill-opacity='.15'/%3e%3c/svg%3e");
+  }
+  .blockquote-light .blockquote-footer {
+	color: #fff;
+  }
+  .blockquote-light .blockquote-footer-source {
+	color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .blockquote-sm.blockquote,
+  .blockquote-sm .blockquote {
+	font-size: 1rem;
+  }
+  .blockquote-sm.blockquote::before,
+  .blockquote-sm .blockquote::before {
+	top: -1.125rem;
+	left: -1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+  }
+  
+  .blockquote-lg.blockquote,
+  .blockquote-lg .blockquote {
+	font-size: calc(1.60625rem + 0.675vw);
+	font-weight: 600;
+  }
+  @media (min-width: 1200px) {
+	.blockquote-lg.blockquote,
+  .blockquote-lg .blockquote {
+	  font-size: 1.8125rem;
+	}
+  }
+  .blockquote-lg.blockquote::before,
+  .blockquote-lg .blockquote::before {
+	top: -3rem;
+	left: -2rem;
+	width: 6rem;
+	height: 6rem;
+  }
+
+
+/*------------------------------------
+  More
+------------------------------------*/
+#more {display: none;}
