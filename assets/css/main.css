@@ -932,7 +932,7 @@ span.minicart-content-remove{
 .ws-shop-page .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
-    *display:inline;
+    /* display:inline; */
     zoom:1;
 }
 .ws-shop-page .nav-tabs, .nav-pills {
@@ -1732,7 +1732,7 @@ tfoot.ws-checkout-shipping tr.ws-shipping-total td{
 .ws-journal-page .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
-    *display:inline;
+    /* display:inline; */
     zoom:1;
 }
 .ws-journal-pagination .pager{
@@ -1984,7 +1984,7 @@ span.ws-journal-category{
 .ws-faq-page .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
-    *display:inline;
+    /* display:inline; */
     zoom:1;
 }
 .ws-faq-page .nav-tabs, .nav-pills {
