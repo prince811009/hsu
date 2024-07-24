@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://www.hsupiano.com/">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo.jpg">
+    <link rel="shortcut icon" href="assets/img/logo-2.png">
     <link rel="canonical" href="https://www.tcymun2023.com/">
 
     <!-- Jquery -->
@@ -68,6 +68,29 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+        function mediaFunction() {
+          var mediaDots = document.getElementById("media-dots");
+          var mediaMoreText = document.getElementById("media-more");
+          var mediaBtnText = document.getElementById("media-myBtn");
+        
+          if (mediaDots.style.display === "none") {
+            mediaDots.style.display = "inline";
+            mediaBtnText.innerHTML = "Load more"; 
+            mediaMoreText.style.display = "none";
+          } else {
+            mediaDots.style.display = "none";
+            mediaBtnText.innerHTML = "Load less"; 
+            mediaMoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #media-more {display: none;}
+    </style>
+
 </head>
     <body>
     <!--[if lt IE 8]>
@@ -205,38 +228,51 @@
                 <div class="ws-about-content clearfix">
                     <div class="col-sm-10 col-sm-offset-1">
                         <h3>媒體訪問</h3> 
-                        <div class="ws-separator"></div>  
-                        <p style="font-size: 13px;">《Mombaby》媽媽寶寶雜誌「Her stories」人物專訪｜2023年12月</p>
-                        <p style="font-size: 13px;">「世界閱讀日-非走book」閱讀上路記者會鋼琴演奏｜2022自由時報</p>
-                        <p style="font-size: 13px;">美女鋼琴師許惠鈞 讓繪本與音樂共舞｜2019 自由時報</p>
-                        <p style="font-size: 13px;">新竹市文化局「最美的風 是翻開書的風」文化局國際演藝廳記者會，說故事活動｜2018 聯合報報導</p>
-                        <p style="font-size: 13px;">音樂與繪畫的結合 : 鋼琴家許惠鈞與劉興治大師的即興之作｜2018 YaHoo!奇摩新聞 / 雲林新聞台專題報導</p>
-                        <p style="font-size: 13px;">大千電台99.1「超級頭殼」節目專訪｜2017</p>
-                        <p style="font-size: 13px;">國聲文教廣播電台節目專訪｜2017</p>
-                        <p style="font-size: 13px;">鹿港女兒-鋼琴家許惠鈞，王惠美立委專題報導｜2016</p>
-                        <p style="font-size: 13px;">自由時報與台北時報專題報導『人美心更美！美女鋼琴師返鄉教琴』｜2016</p>
-                        <p style="font-size: 13px;">彰化新聞台：在地最美專題報導『鋼琴美女老師許惠鈞，彈出鹿港美妙樂章』｜2016</p>
-                        <p style="font-size: 13px;">受邀於中央廣播電台『DJ音樂盒』節目專訪，由五大金鐘主持人譚志薏訪問｜2016</p>
-                        <p style="font-size: 13px;">受邀於自由之聲廣播電台專訪，由主持人盧瓊蓉聲樂家訪問｜2016</p>
-                        <p style="font-size: 13px;">VBS與台北縣政府合作之公關公司一同於教師節當天採訪教學經驗與理念｜2009</p>
-                        <p style="font-size: 13px;">參與2009年第二屆全世界華人鋼琴大賽，並受主辦單位電視台與記者採訪｜2009</p>
+                        <div class="ws-separator"></div>
+                        <a href="https://www.mombaby.com.tw/articles/9928881" target="_blank">
+                            <p style="font-size: 13px;">《Mombaby》媽媽寶寶雜誌「Her stories」人物專訪</p>
+                        </a> 
 
-                        <!-- 
-                        <p>《Mombaby》媽媽寶寶雜誌「Her stories」人物專訪｜2023年12月</p>
-                        <p>「世界閱讀日-非走book」閱讀上路記者會鋼琴演奏｜2022自由時報</p>
-                        <p>美女鋼琴師許惠鈞 讓繪本與音樂共舞｜2019 自由時報</p>
-                        <p>新竹市文化局「最美的風 是翻開書的風」文化局國際演藝廳記者會，說故事活動｜2018 聯合報報導</p>
-                        <p>音樂與繪畫的結合 : 鋼琴家許惠鈞與劉興治大師的即興之作｜2018 YaHoo!奇摩新聞 / 雲林新聞台專題報導</p>
-                        <p>大千電台99.1「超級頭殼」節目專訪｜2017</p>
-                        <p>國聲文教廣播電台節目專訪｜2017</p>
-                        <p>鹿港女兒-鋼琴家許惠鈞，王惠美立委專題報導｜2016</p>
-                        <p>自由時報與台北時報專題報導『人美心更美！美女鋼琴師返鄉教琴』｜2016</p>
-                        <p>彰化新聞台：在地最美專題報導『鋼琴美女老師許惠鈞，彈出鹿港美妙樂章』｜2016</p>
-                        <p>受邀於中央廣播電台『DJ音樂盒』節目專訪，由五大金鐘主持人譚志薏訪問｜2016</p>
-                        <p>受邀於自由之聲廣播電台專訪，由主持人盧瓊蓉聲樂家訪問｜2016</p>
-                        <p>VBS與台北縣政府合作之公關公司一同於教師節當天採訪教學經驗與理念｜2009</p>
-                        <p>參與2009年第二屆全世界華人鋼琴大賽，並受主辦單位電視台與記者採訪｜2009</p>
-                        -->
+                        <a href="https://news.ltn.com.tw/news/life/breakingnews/3876707" target="_blank">
+                            <p style="font-size: 13px;">「世界閱讀日-非走book」閱讀上路記者會鋼琴演奏</p>
+                        </a> 
+
+                        <a href="https://news.ltn.com.tw/news/life/breakingnews/2873594" target="_blank">
+                            <p style="font-size: 13px;">美女鋼琴師許惠鈞 讓繪本與音樂共舞</p>
+                        </a> 
+
+                        <a href="https://www.hccg.gov.tw/ch/home.jsp?id=48&parentpath=&mcustomize=municipalnews_view.jsp&toolsflag=Y&dataserno=201811130003&t=MunicipalNews&mserno=201601300307" target="_blank">
+                            <p style="font-size: 13px;">新竹市文化局「最美的風 是翻開書的風」文化局國際演藝廳記者會，說故事活動</p>
+                        </a> 
+
+                        <a href="https://www.youtube.com/watch?v=2XEWE8RtD7g" target="_blank">
+                            <p style="font-size: 13px;">大千電台99.1「超級頭殼」節目專訪</p>
+                        </a> 
+
+                        <a href="https://www.facebook.com/watch/?v=1736500456616746" target="_blank">
+                            <p style="font-size: 13px;">鹿港女兒-鋼琴家許惠鈞，王惠美立委專題報導</p>
+                        </a> 
+
+                        <a href="https://news.ltn.com.tw/news/life/breakingnews/1797606" target="_blank">
+                            <p style="font-size: 13px;">自由時報與台北時報專題報導『人美心更美！美女鋼琴師返鄉教琴』</p>
+                        </a> 
+
+                        <a href="https://www.facebook.com/watch/?v=1736500456616746" target="_blank">
+                            <p style="font-size: 13px;">彰化新聞台：在地最美專題報導『鋼琴美女老師許惠鈞，彈出鹿港美妙樂章』</p>
+                        </a> 
+
+                        <a href="https://www.rti.org.tw/radio/programMessageView/id/26326" target="_blank">
+                            <p style="font-size: 13px;">受邀於中央廣播電台『DJ音樂盒』節目專訪，由五大金鐘主持人譚志薏訪問</p>
+                        </a> 
+
+                        <a href="https://www.facebook.com/media/set/?set=a.10154635634106874.1073741984.258624441873&type=3&_rdr" target="_blank">
+                            <p style="font-size: 13px;">受邀於自由之聲廣播電台專訪，由主持人盧瓊蓉聲樂家訪問</p>
+                        </a> 
+
+                        <p style="font-size: 13px;">音樂與繪畫的結合 : 鋼琴家許惠鈞與劉興治大師的即興之作</p>
+                        <p style="font-size: 13px;">國聲文教廣播電台節目專訪</p>
+                        <p style="font-size: 13px;">TVBS與台北縣政府合作之公關公司一同於教師節當天採訪教學經驗與理念</p>
+                        <p style="font-size: 13px;">參與2009年第二屆全世界華人鋼琴大賽，並受主辦單位電視台與記者採訪</p>
                     </div>                
                 </div>
             </div>
@@ -266,7 +302,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="all">   
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                    
+                        <div class="col-sm-6 col-md-4 ws-works-item">                    
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -286,7 +322,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <!-- Image -->                        
                             <figure>                            
                                 <img src="assets/img/media-interview/2.png" alt="《Mombaby》媽媽寶寶雜誌「Her stories」人物專訪" class="img-responsive">
@@ -303,7 +339,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -323,7 +359,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <!-- Image -->                        
                             <figure>                            
                                 <img src="assets/img/media-interview/4.png" alt="人美心更美！ 美女鋼琴師故鄉授課只收「回饋價」" class="img-responsive">
@@ -340,27 +376,43 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/media-interview/5.png" alt="大千電台99.1「超級頭殼」節目專訪" class="img-responsive">
-                                </figure>                    
-                            </div>
-
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <!-- Image -->                        
+                            <figure>                            
+                                <img src="assets/img/media-interview/10.png" alt="美女鋼琴師許惠鈞 讓繪本與音樂共舞！" class="img-responsive">
+                            </figure>
                             <div class="ws-works-caption text-center">
                                 <!-- Item Category -->
-                                <div class="ws-item-category">大千電台99.1</div>
+                                <div class="ws-item-category">美女鋼琴師許惠鈞</div>
 
                                 <!-- Title -->
-                                <h5 class="ws-item-title">「超級頭殼」節目專訪</h5>                        
+                                <h4 class="ws-item-title">讓繪本與音樂共舞！</h4>                        
 
-                                <div class="ws-item-separator"></div>   
+                                <div class="ws-item-separator"></div>    
                             </div>
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                      
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <!-- Image -->                        
+                            <figure>                            
+                                <img src="assets/img/media-interview/12.png" alt="國聲廣播電台專訪01" class="img-responsive">
+                            </figure>
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">國聲廣播電台</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">電台專訪</h4>                        
+
+                                <div class="ws-item-separator"></div>    
+                            </div>
+                            <p><span id="media-dots"></span></p>      
+                        </div>
+
+                        <div id="media-more">
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                      
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -380,84 +432,27 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
-                                    <img src="assets/img/media-interview/7.png" alt="中央廣播電台專訪02" class="img-responsive">
+                                    <img src="assets/img/media-interview/19.png" alt="鋼琴美女老師，彈出鹿港美妙樂章" class="img-responsive">
                                 </figure>                    
                             </div>
 
                             <div class="ws-works-caption text-center">
                                 <!-- Item Category -->
-                                <div class="ws-item-category">中央廣播電台</div>
+                                <div class="ws-item-category">鋼琴美女老師</div>
 
                                 <!-- Title -->
-                                <h4 class="ws-item-title">電台專訪</h4>                        
+                                <h4 class="ws-item-title">彈出鹿港美妙樂章</h4>                        
 
                                 <div class="ws-item-separator"></div>   
                             </div>
-                        </div>
+                        </div> 
 
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/media-interview/8.png" alt="冬日喜讀書記者會" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">冬日喜讀書</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">記者會</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/media-interview/9.png" alt="竹縣「非走BOOK」閱讀上路" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">竹縣</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">「非走BOOK」閱讀上路</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <!-- Image -->                        
-                            <figure>                            
-                                <img src="assets/img/media-interview/10.png" alt="美女鋼琴師許惠鈞 讓繪本與音樂共舞！" class="img-responsive">
-                            </figure>
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">美女鋼琴師許惠鈞</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">讓繪本與音樂共舞！</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                         <!-- Item -->
+                         <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -477,84 +472,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <!-- Image -->                        
-                            <figure>                            
-                                <img src="assets/img/media-interview/12.png" alt="國聲廣播電台專訪01" class="img-responsive">
-                            </figure>
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">國聲廣播電台</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">電台專訪</h4>                        
-
-                                <div class="ws-item-separator"></div>    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/media-interview/13.png" alt="莎菲特代言人" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">莎菲特</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">代言人</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/media-interview/14.png" alt="莎菲特代言人" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">莎菲特</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">代言人</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/media-interview/15.png" alt="莎菲特代言人廣告示意圖" class="img-responsive">
-                                </figure>                    
-                            </div>
-
-                            <div class="ws-works-caption text-center">
-                                <!-- Item Category -->
-                                <div class="ws-item-category">莎菲特</div>
-
-                                <!-- Title -->
-                                <h4 class="ws-item-title">代言人廣告</h4>                        
-
-                                <div class="ws-item-separator"></div>   
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -573,9 +491,8 @@
                             </div>
                         </div>  
 
-
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -596,7 +513,7 @@
 
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -613,30 +530,90 @@
 
                                 <div class="ws-item-separator"></div>   
                             </div>
-                        </div>  
+                        </div> 
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
-                                    <img src="assets/img/media-interview/19.png" alt="鋼琴美女老師，彈出鹿港美妙樂章" class="img-responsive">
+                                    <img src="assets/img/media-interview/5.png" alt="大千電台99.1「超級頭殼」節目專訪" class="img-responsive">
                                 </figure>                    
                             </div>
 
                             <div class="ws-works-caption text-center">
                                 <!-- Item Category -->
-                                <div class="ws-item-category">鋼琴美女老師</div>
+                                <div class="ws-item-category">大千電台99.1</div>
 
                                 <!-- Title -->
-                                <h4 class="ws-item-title">彈出鹿港美妙樂章</h4>                        
+                                <h5 class="ws-item-title">「超級頭殼」節目專訪</h5>                        
 
                                 <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/media-interview/7.png" alt="中央廣播電台專訪02" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">中央廣播電台</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">電台專訪</h4>                        
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/media-interview/8.png" alt="冬日喜讀書記者會" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">冬日喜讀書</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">記者會</h4>                        
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/media-interview/9.png" alt="竹縣「非走BOOK」閱讀上路" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">竹縣</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">「非走BOOK」閱讀上路</h4>                        
+
+                                <div class="ws-item-separator"></div>    
                             </div>
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -656,7 +633,7 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -674,6 +651,74 @@
                                 <div class="ws-item-separator"></div>   
                             </div>
                         </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/media-interview/13.png" alt="莎菲特代言人" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">莎菲特</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">代言人</h4>                        
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/media-interview/14.png" alt="莎菲特代言人" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">莎菲特</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">代言人</h4>                        
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/media-interview/15.png" alt="莎菲特代言人廣告示意圖" class="img-responsive">
+                                </figure>                    
+                            </div>
+
+                            <div class="ws-works-caption text-center">
+                                <!-- Item Category -->
+                                <div class="ws-item-category">莎菲特</div>
+
+                                <!-- Title -->
+                                <h4 class="ws-item-title">代言人廣告</h4>                        
+
+                                <div class="ws-item-separator"></div>   
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="ws-more-btn-holder col-sm-12">
+                            <a style="outline: none;">
+                                <button class="btn ws-more-btn" onclick="mediaFunction()" id="media-myBtn">Load more</button>
+                            </a>
+                        </div>
+
                     </div>
 
 
@@ -728,53 +773,23 @@
             <div class="row vertical-align">
                 <!-- Instagram Item -->
                 <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/1-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                    <img src="assets/img/journal/1-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>    
 
                 <!-- Instagram Item -->
-                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.3s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
+                    <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>   
 
                 <!-- Instagram Item -->
                 <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.5s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/3-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                    <img src="assets/img/journal/3-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>                                   
             </div>
 
         </div>
     </section>
     <!-- End Instagram Content -->
-    
-    <!-- Subscribe Section -->
-    <section class="ws-subscribe-section">
-        <div class="container">
-            <div class="row">
-                <!-- Subscribe Content -->
-                <div class="ws-subscribe-content text-center clearfix">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <h3>Sign up for the newsletter</h3>       
-                        <div class="ws-separator"></div>                             
-                        <!-- Form -->
-                        <form class="form-inline">                            
-                            <div class="form-group">                                
-                                <input type="email" class="form-control" placeholder="Enter your email">
-                            </div>   
-                            <!-- Button -->                         
-                            <a class="btn ws-btn-subscribe">Subscribe</a>                            
-                        </form>
-                    </div>                
-                </div>
-            </div>          
-        </div>
-    </section>
-    <!-- End Subscribe Section -->   
 
     <!-- Footer Start -->
     <footer class="ws-footer">       
@@ -843,7 +858,7 @@
 
             <!-- Copyright -->
             <div class="pull-left">
-                <p>HSU HUI CHUN &copy; 2024 All rights reserved.</p>       
+                <p>HSUPIANO &copy; 2024 All rights reserved.</p>       
             </div>
 
             <!-- Payments -->

@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://www.hsupiano.com/">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo.jpg">
+    <link rel="shortcut icon" href="assets/img/logo-2.png">
     <link rel="canonical" href="https://www.tcymun2023.com/">
 
     <!-- Jquery -->
@@ -68,6 +68,29 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+        function artFunction() {
+          var artDots = document.getElementById("art-dots");
+          var artMoreText = document.getElementById("art-more");
+          var artBtnText = document.getElementById("art-myBtn");
+        
+          if (artDots.style.display === "none") {
+            artDots.style.display = "inline";
+            artBtnText.innerHTML = "Load more"; 
+            artMoreText.style.display = "none";
+          } else {
+            artDots.style.display = "none";
+            artBtnText.innerHTML = "Load less"; 
+            artMoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #art-more {display: none;}
+    </style>
+
 </head>
     <body>
     <!--[if lt IE 8]>
@@ -246,7 +269,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="all">   
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                
+                        <div class="col-sm-6 col-md-4 ws-works-item">                
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -256,7 +279,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -266,7 +289,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                      
+                        <div class="col-sm-6 col-md-4 ws-works-item">                      
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -276,7 +299,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -286,217 +309,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/5.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/6.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                     
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/7.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                     
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/8.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">             
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/9.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/10.png" alt="" class="img-responsive">
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/11.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/12.png" alt="" class="img-responsive">
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/13.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/14.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/15.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/16.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                     
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/17.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/18.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                      
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/19.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                       
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/20.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">                      
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/21.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/22.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/23.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/24.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
-                            <div class="ws-item-offer">
-                                <!-- Image -->                        
-                                <figure>                            
-                                    <img src="assets/img/art-exhibition/25.png" alt="" class="img-responsive">
-                                </figure>                    
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -506,7 +319,19 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/25.png" alt="" class="img-responsive">
+                                </figure>   
+                                <p><span id="art-dots"></span></p>                     
+                            </div>
+                        </div>
+
+                        <div id="art-more">
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -516,7 +341,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -526,7 +351,7 @@
                         </div>  
                         
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -536,7 +361,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
@@ -546,13 +371,210 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-6 col-md-3 ws-works-item">
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/5.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/6.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                     
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/7.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                     
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/8.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">             
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/9.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/10.png" alt="" class="img-responsive">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/11.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/12.png" alt="" class="img-responsive">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/13.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/14.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/16.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                     
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/17.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/18.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                      
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/19.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                       
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/20.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">                      
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/21.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/22.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/23.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
+                            <div class="ws-item-offer">
+                                <!-- Image -->                        
+                                <figure>                            
+                                    <img src="assets/img/art-exhibition/24.png" alt="" class="img-responsive">
+                                </figure>                    
+                            </div>
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-6 col-md-4 ws-works-item">
                             <div class="ws-item-offer">
                                 <!-- Image -->                        
                                 <figure>                            
                                     <img src="assets/img/art-exhibition/31.png" alt="" class="img-responsive">
                                 </figure>                    
                             </div>
+                        </div>
+                        </div>
+
+                        <div class="ws-more-btn-holder col-sm-12">
+                            <a style="outline: none;">
+                                <button class="btn ws-more-btn" onclick="artFunction()" id="art-myBtn">Load more</button>
+                            </a>
                         </div>
                  
                     </div>
@@ -609,53 +631,23 @@
             <div class="row vertical-align">
                 <!-- Instagram Item -->
                 <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/1-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                    <img src="assets/img/journal/1-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>    
 
                 <!-- Instagram Item -->
-                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.3s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
+                    <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>   
 
                 <!-- Instagram Item -->
                 <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.5s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/3-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                    <img src="assets/img/journal/3-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>                                   
             </div>
 
         </div>
     </section>
-    <!-- End Instagram Content -->
-    
-    <!-- Subscribe Section -->
-    <section class="ws-subscribe-section">
-        <div class="container">
-            <div class="row">
-                <!-- Subscribe Content -->
-                <div class="ws-subscribe-content text-center clearfix">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <h3>Sign up for the newsletter</h3>       
-                        <div class="ws-separator"></div>                             
-                        <!-- Form -->
-                        <form class="form-inline">                            
-                            <div class="form-group">                                
-                                <input type="email" class="form-control" placeholder="Enter your email">
-                            </div>   
-                            <!-- Button -->                         
-                            <a class="btn ws-btn-subscribe">Subscribe</a>                            
-                        </form>
-                    </div>                
-                </div>
-            </div>          
-        </div>
-    </section>
-    <!-- End Subscribe Section -->   
+    <!-- End Instagram Content -->  
 
      <!-- Footer Start -->
      <footer class="ws-footer">       
@@ -724,7 +716,7 @@
 
             <!-- Copyright -->
             <div class="pull-left">
-                <p>HSU HUI CHUN &copy; 2024 All rights reserved.</p>       
+                <p>HSUPIANO &copy; 2024 All rights reserved.</p>       
             </div>
 
             <!-- Payments -->

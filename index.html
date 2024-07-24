@@ -24,8 +24,8 @@
     <meta property="og:url" content="https://www.hsupiano.com/">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo.jpg">
-    <link rel="canonical" href="https://www.tcymun2023.com/">
+    <link rel="shortcut icon" href="assets/img/logo-2.png">
+    <link rel="canonical" href="https://www.hsupiano.com/">
 
     <!-- Jquery -->
     <script src="assets/js/plugins/jquery-1.11.3.min.js"></script>
@@ -51,6 +51,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
     <!-- Slider Revolution -->
     <script src="assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -88,20 +89,8 @@
     </div>
     <!-- End Loader Start -->
 
-    <!-- Top Bar Start -->
-    <div class="ws-topbar">
-        <div class="pull-left">
-            <div class="ws-topbar-message hidden-xs">
-            </div>
-        </div>
-
-        <div class="pull-right">      
-        </div>
-    </div> 
-    <!-- Top Bar End -->
-
     <!-- Header Start -->
-    <header class="ws-header ws-header-transparent">                                    
+    <header class="ws-header ws-header-transparent" style="position: fixed; padding-bottom: 15px; background-color: #000000c9;">                                    
                     
         <!-- Navbar -->       
         <nav class="navbar ws-navbar navbar-default">
@@ -117,8 +106,9 @@
 
                 <!-- Logo -->      
                 <div class="ws-logo ws-center">
-                    <a href="index.html">
-                        <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive">
+                    <a href="index.html" class="logo-text">
+                        <!-- <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive"> -->
+                        HSUPIANO
                     </a>
                 </div>
                
@@ -244,7 +234,7 @@
                     data-start="1000"                      
                     data-responsive_offset="on" 
                     data-responsive="off"
-                    style="z-index: 8;"><a class="btn ws-big-btn" href="store.html">View Collention</a>
+                    style="z-index: 8;"><a class="btn ws-big-btn" href="store.html">View Collection</a>
                 </div>
             </li>
         </ul>    
@@ -252,6 +242,65 @@
         <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>         
     </div>
     <!-- Hero Content -->    
+
+    <div class="row home-social" style="padding: 20px;">
+        <!-- Facebook Item -->
+        <div class="col-sm-4 ws-instagram-item" 
+            style="text-align: center;">
+            <a href="https://www.facebook.com/huichun222/?locale=zh_TW" target="_blank" class="home-social-line" style="color: black;">
+                <span><img src="assets/img/home/icons8-facebook-48.png" alt="Facebook"></span>&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;
+            </a>
+        </div>    
+
+        <!-- Instagram Item -->
+        <div class="col-sm-4 ws-instagram-item" 
+            style="text-align: center;">
+            <a href="https://www.instagram.com/hsupiano_official" target="_blank" class="home-social-line" style="color: black;">
+                <span><img src="assets/img/home/icons8-instagram-48.png" alt="Instagram"></span>&nbsp;&nbsp;&nbsp;Instagram
+            </a>
+        </div>  
+        
+        <!-- Line Item -->
+        <div class="col-sm-4 ws-instagram-item" 
+            style="text-align: center;">
+            <a href="https://lin.ee/n8jFB1p" target="_blank" class="home-social-line" style="color: black;">
+                <span><img src="assets/img/home/icons8-line-48.png" alt="Line"></span>&nbsp;&nbsp;&nbsp;Line&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>  
+        </div>  
+                                 
+    </div>
+
+
+
+
+    <!-- News Section Start -->
+    <section class="ws-about-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- News 最新消息 -->
+                <div class="ws-about-content clearfix">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h3>最新消息</h3> 
+                        <div class="ws-separator"></div>      
+                        <div class="row vertical-align">
+                            <a href="https://www.khsmusic.com.tw/getNews?id=502" target="_blank" class="news-text">
+                                <h5>- 活動快訊 | 音樂轉運站-鋼琴系列講座《做自己的主人，用情緒來表達琴敘》八月 3, 2024</h5>
+                                <div class="featured-collections-item">
+                                    <div class="thumbnail">
+                                        <img src="assets/img/home/new-1.jpg" width="400px" alt="活動快訊 | 音樂轉運站-鋼琴系列講座《做自己的主人，用情緒來表達琴敘》"> 
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+       
+                    </div>                
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- News Section End -->     
 
     <!-- About Section Start -->
     <section class="ws-about-section">
@@ -272,51 +321,72 @@
                 <div class="ws-featured-collections clearfix">
                     <!-- Item -->
                     <div class="col-sm-4 featured-collections-item">
-                        <a href="#x">
-                            <div class="thumbnail">
-                                <img src="assets/img/home/1.png" alt="Alternative Text">
-                                <div class="ws-overlay">
-                                    <div class="caption">
-                                        <h3>HSU HUI CHUN</h3> 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <div class="thumbnail">
+                            <img src="assets/img/home/1.png" alt="Alternative Text">
+                        </div>
                     </div>
 
                     <!-- Item -->
                     <div class="col-sm-4 featured-collections-item">
-                        <a href="#x">
-                            <div class="thumbnail">
-                                <img src="assets/img/home/3.png" alt="Alternative Text">
-                                <div class="ws-overlay">
-                                    <div class="caption">
-                                        <h3>HSU HUI CHUN</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <div class="thumbnail">
+                            <img src="assets/img/home/3.png" alt="Alternative Text">
+                        </div>
                     </div>
 
                     <!-- Item -->
                     <div class="col-sm-4 featured-collections-item">
-                        <a href="#x">
-                            <div class="thumbnail">
-                                <img src="assets/img/home/6.png" alt="Alternative Text">
-                                <div class="ws-overlay">
-                                    <div class="caption">
-                                        <h3>HSU HUI CHUN</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <div class="thumbnail">
+                            <img src="assets/img/home/6.png" alt="Alternative Text">
+                        </div>
                     </div>                    
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- About Section End -->     
+    <!-- About Section End --> 
+    
+    <!-- Comment Section Start 名人推薦 -->
+    <section class="ws-about-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Description -->
+                <div class="ws-about-content clearfix">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h3>名人推薦</h3> 
+                        <div class="ws-separator"></div>                     
+                    </div>                
+                </div>
+
+                <!-- Featured Collections -->
+                <div class="ws-featured-collections clearfix">
+                    <!-- Item -->
+                    <div class="col-sm-4 featured-collections-item">
+                        <div class="thumbnail">
+                            <img src="assets/img/home/line-1.jpg" alt="名人推薦">
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-sm-4 featured-collections-item">
+                        <div class="thumbnail">
+                            <img src="assets/img/home/line-2.jpg" alt="名人推薦">
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-sm-4 featured-collections-item">
+                        <div class="thumbnail">
+                            <img src="assets/img/home/line-3.jpg" alt="名人推薦">
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section End --> 
 
     <!-- New Arrivals Section -->    
     <section class="ws-arrivals-section">
@@ -332,7 +402,7 @@
 
             <!-- Item -->
             <div class="ws-works-item" data-sr='wait 0.1s, ease-in 20px'>
-                <a href="#">                        
+                <a href="single-product-01.html">                        
                     <div class="ws-item-offer">
                         <!-- Image -->                        
                         <figure>                            
@@ -357,7 +427,7 @@
 
             <!-- Item -->
             <div class="ws-works-item" data-sr='wait 0.3s, ease-in 20px'>
-                <a href="#">
+                <a href="single-product-02.html">
                     <!-- Image -->                        
                     <figure>                            
                         <img src="assets/img/home/new/2.png" alt="Alternative Text" class="img-responsive">
@@ -379,7 +449,7 @@
 
             <!-- Item -->
             <div class="ws-works-item" data-sr='wait 0.5s, ease-in 20px'>
-                <a href="#">
+                <a href="single-product-03.html">
                     <!-- Image -->                        
                     <figure>                            
                         <img src="assets/img/home/new/3.png" alt="Alternative Text" class="img-responsive">
@@ -401,56 +471,52 @@
 
             <!-- Item -->        
             <div class="ws-works-item" data-sr='wait 0.7s, ease-in 20px'>
-                <a href="#">
-                    <div class="ws-item-offer">
-                        <!-- Image -->                        
-                        <figure>                            
-                            <img src="assets/img/home/new/4.png" alt="Alternative Text" class="img-responsive">
-                        </figure>                    
-                    </div>
-                    <div class="ws-works-caption text-center">
-                        <!-- Item Category -->
-                        <div class="ws-item-category">暢銷專輯</div>
+                <div class="ws-item-offer">
+                    <!-- Image -->                        
+                    <figure>                            
+                        <img src="assets/img/home/new/4.png" alt="Alternative Text" class="img-responsive">
+                    </figure>                    
+                </div>
+                <div class="ws-works-caption text-center">
+                    <!-- Item Category -->
+                    <div class="ws-item-category">暢銷專輯</div>
 
-                        <!-- Title -->
-                        <h3 class="ws-item-title">古典胎教音樂</h3>                        
+                    <!-- Title -->
+                    <h3 class="ws-item-title">古典胎教音樂</h3>                        
 
-                        <div class="ws-item-separator"></div>    
+                    <div class="ws-item-separator"></div>    
 
-                        <!-- Price -->
-                        <div class="ws-item-price"></div>                        
-                    </div>
-                </a>
+                    <!-- Price -->
+                    <div class="ws-item-price"></div>                        
+                </div>
             </div>
 
             <!-- Item -->
-            <div class="ws-works-item"> 
-                <a href="#">                        
-                    <div class="ws-item-offer">
-                        <!-- Image -->                        
-                        <figure>                            
-                            <img src="assets/img/home/new/5.png" alt="Alternative Text" class="img-responsive">
-                        </figure>                    
-                    </div>
+            <div class="ws-works-item">                        
+                <div class="ws-item-offer">
+                    <!-- Image -->                        
+                    <figure>                            
+                        <img src="assets/img/home/new/5.png" alt="Alternative Text" class="img-responsive">
+                    </figure>                    
+                </div>
 
-                    <div class="ws-works-caption text-center">
-                        <!-- Item Category -->
-                        <div class="ws-item-category">暢銷專輯</div>
+                <div class="ws-works-caption text-center">
+                    <!-- Item Category -->
+                    <div class="ws-item-category">暢銷專輯</div>
 
-                        <!-- Title -->
-                        <h3 class="ws-item-title">夢行者</h3>                        
+                    <!-- Title -->
+                    <h3 class="ws-item-title">夢行者</h3>                        
 
-                        <div class="ws-item-separator"></div>    
+                    <div class="ws-item-separator"></div>    
 
-                        <!-- Price -->
-                        <div class="ws-item-price"></div>                                                    
-                    </div>
-                </a>
+                    <!-- Price -->
+                    <div class="ws-item-price"></div>                                                    
+                </div>
             </div>
 
             <!-- Item -->
             <div class="ws-works-item">
-                <a href="#">                        
+                <a href="single-product-04.html">                        
                     <div class="ws-item-offer">
                         <!-- Image -->                        
                         <figure>                            
@@ -475,7 +541,7 @@
 
             <!-- Item -->
             <div class="ws-works-item">
-                <a href="#">                        
+                <a href="single-product-05.html">                        
                     <div class="ws-item-offer">
                         <!-- Image -->                        
                         <figure>                            
@@ -502,159 +568,13 @@
     </section>
     <!-- End New Arrivals Section -->     
 
-    <!-- Work Collection Start  -->
-    <section class="ws-works-section">
-        <div class="container">
-            <div class="row">   
-
-                <div class="ws-works-title">
-                    <div class="col-sm-12">
-                        <h3>Albums</h3> 
-                        <div class="ws-separator"></div>   
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/16.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/15.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>  
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/8.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/9.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/10.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/11.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/12.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div>  
-
-                <!-- Item -->
-                <div class="col-sm-3 ws-journal-item">                              
-                    <div class="ws-journal-image">
-                        <figure>
-                            <img src="assets/img/albums/13.png" alt="Alternative Text">
-                        </figure>
-                    </div>
-                    <!-- 
-                    <div class="ws-journal-caption">
-                        <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                    </div>                   
-                    <span class="ws-journal-category">Home</span>
-                    -->                             
-                </div> 
-
-
-            </div>
-        </div>
-    </section>
-    <!-- Work Collection End  -->
-
     <!-- Call to Action Section -->
     <section class="ws-call-section">
         <div class="ws-overlay">            
             <div class="ws-parallax-caption">                
                 <div class="ws-parallax-holder">
                     <div class="col-sm-6 col-sm-offset-3">
-                        <h2>HSU HUI CHUN</h2>         
+                        <h2>HSUPIANO</h2>         
                         <div class="ws-separator"></div>    
                         <p>歡迎您一同體驗許惠鈞的音樂魔力，讓她的音符療癒您的心靈，伴您走過每一個美好時光。</p>                                                                      
                         <div class="ws-call-btn">
@@ -676,7 +596,7 @@
                     <div class="ws-instagram-header">
                         <h3>Instagram</h3>     
                         <br>                   
-                        <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ws-instagram-link"> @hey_huichunhsu</a>
+                        <a href="https://www.instagram.com/hsupiano_official" target="_blank" class="ws-instagram-link"> @hsupiano_official</a>
                         <br>
                         <p style="margin-top: 10px;">許惠鈞，一位橫跨古典、新世紀、爵士與世界音樂的鋼琴家、創作家和聲音設計者，她的音樂風格涵蓋了古典音樂的優雅、新世紀音樂的清新、爵士的即興以及世界音樂的多元。</p>
                         <br>
@@ -687,53 +607,23 @@
             <div class="row vertical-align">
                 <!-- Instagram Item -->
                 <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/1-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                    <img src="assets/img/journal/1-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>    
 
                 <!-- Instagram Item -->
-                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.3s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
+                    <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>   
 
                 <!-- Instagram Item -->
                 <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.5s, ease-in 20px'>
-                    <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <img src="assets/img/journal/3-1.jpg" alt="Alternative Text" class="img-responsive">
-                    </a>
+                    <img src="assets/img/journal/3-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>                                   
             </div>
 
         </div>
     </section>
-    <!-- End Instagram Content -->
-    
-    <!-- Subscribe Section -->
-    <section class="ws-subscribe-section">
-        <div class="container">
-            <div class="row">
-                <!-- Subscribe Content -->
-                <div class="ws-subscribe-content text-center clearfix">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <h3>Sign up for the newsletter</h3>       
-                        <div class="ws-separator"></div>                             
-                        <!-- Form -->
-                        <form class="form-inline">                            
-                            <div class="form-group">                                
-                                <input type="email" class="form-control" placeholder="Enter your email">
-                            </div>   
-                            <!-- Button -->                         
-                            <a class="btn ws-btn-subscribe">Subscribe</a>                            
-                        </form>
-                    </div>                
-                </div>
-            </div>          
-        </div>
-    </section>
-    <!-- End Subscribe Section -->   
+    <!-- End Instagram Content -->  
 
     <!-- Footer Start -->
     <footer class="ws-footer">       
@@ -763,7 +653,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="albums.html">ALBUMS</a></li>                        
+                        <li><a href="story.html">EDUCATION</a></li>                    
                     </ul>                    
                 </div>  
 
@@ -772,7 +662,7 @@
                     <h3>Music</h3>         
                     <div class="ws-footer-separator"></div>                                                     
                     <ul>
-                        <li><a href="story.html">EDUCATION</a></li>
+                        <li><a href="albums.html">ALBUMS</a></li>  
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
                         <li><a href="store.html">STORE</a></li>
                         <li><a href="contact.html">CONTACT</a></li>                        
@@ -784,10 +674,9 @@
                     <h3>Socials</h3>   
                     <div class="ws-footer-separator"></div>                                         
                     <ul class="ws-footer-social">
-                        <li><a href="#x"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
-                        <li><a href="#x"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
-                        <li><a href="#x"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-                        <li><a href="#x"><i class="fa fa-pinterest fa-lg"></i> Pinterest</a></li>                        
+                        <li><a href="https://www.facebook.com/huichun222/?locale=zh_TW" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/hsupiano_official" target="_blank"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+                        <li><a href="https://lin.ee/n8jFB1p" target="_blank"><i class="lni lni-line" style="font-size: 13px;"></i> Line</a></li>                        
                     </ul>                    
                 </div> 
                    
@@ -802,7 +691,7 @@
 
             <!-- Copyright -->
             <div class="pull-left">
-                <p>HSU HUI CHUN &copy; 2024 All rights reserved.</p>       
+                <p>HSUPIANO &copy; 2024 All rights reserved.</p>       
             </div>
 
             <!-- Payments -->
