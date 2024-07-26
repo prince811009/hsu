@@ -25,7 +25,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo-2.png">
-    <link rel="canonical" href="https://www.tcymun2023.com/">
+    <link rel="canonical" href="https://www.hsupiano.com/">
 
     <!-- Jquery -->
     <script src="assets/js/plugins/jquery-1.11.3.min.js"></script>
@@ -51,6 +51,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
     <!-- Slider Revolution -->
     <script src="assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -68,11 +69,55 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+        function projectFunction() {
+          var projectDots = document.getElementById("project-dots");
+          var projectMoreText = document.getElementById("project-more");
+          var projectBtnText = document.getElementById("project-myBtn");
+        
+          if (projectDots.style.display === "none") {
+            projectDots.style.display = "inline";
+            projectBtnText.innerHTML = "Load more"; 
+            projectMoreText.style.display = "none";
+          } else {
+            projectDots.style.display = "none";
+            projectBtnText.innerHTML = "Load less"; 
+            projectMoreText.style.display = "inline";
+          }
+        }
+
+        function project_2_Function() {
+            var project_2_Dots = document.getElementById("project-2-dots");
+          var project_2_MoreText = document.getElementById("project-2-more");
+          var project_2_BtnText = document.getElementById("project-2-myBtn");
+        
+          if (project_2_Dots.style.display === "none") {
+            project_2_Dots.style.display = "inline";
+            project_2_BtnText.innerHTML = "Load more"; 
+            project_2_MoreText.style.display = "none";
+          } else {
+            project_2_Dots.style.display = "none";
+            project_2_BtnText.innerHTML = "Load less"; 
+            project_2_MoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #project-more {display: none;}
+        #project-2-more {display: none;}
+    </style>
+
 </head>
-    <body>
+
+<body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->  
+
+    <!-- Back to top -->
+    <a id="button"></a>
 
     <!-- Loader Start -->
     <div id="preloader">
@@ -87,20 +132,8 @@
     </div>
     <!-- End Loader Start -->
 
-    <!-- Top Bar Start -->
-    <div class="ws-topbar">
-        <div class="pull-left">
-            <div class="ws-topbar-message hidden-xs">
-            </div>
-        </div>
-
-        <div class="pull-right">      
-        </div>
-    </div> 
-    <!-- Top Bar End -->
-
     <!-- Header Start -->
-    <header class="ws-header ws-header-transparent">                                    
+    <header class="ws-header ws-header-transparent" style="position: fixed; padding-bottom: 15px; background-color: #000000c9;">                                    
                     
         <!-- Navbar -->       
         <nav class="navbar ws-navbar navbar-default">
@@ -116,8 +149,9 @@
 
                 <!-- Logo -->      
                 <div class="ws-logo ws-center">
-                    <a href="index.html">
-                        <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive">
+                    <a href="index.html" class="logo-text">
+                        <!-- <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive"> -->
+                        HSUPIANO
                     </a>
                 </div>
                
@@ -182,10 +216,10 @@
             </div>
         </nav> 
     </header>
-    <!-- End Header -->   
+    <!-- End Header -->  
 
     <!-- Page Parallax Header -->
-    <div class="ws-parallax-header parallax-window" data-parallax="scroll" data-image-src="assets/img/backgrounds/about-header-bg-1.jpg">        
+    <div class="ws-parallax-header parallax-window" data-parallax="scroll" data-image-src="assets/img/education/project-planning/02.jpg">        
         <div class="ws-overlay">            
             <div class="ws-parallax-caption">                
                 <div class="ws-parallax-holder">
@@ -203,12 +237,9 @@
                 <!-- Information -->
                 <p></p>
 
-                <!-- Space Helper Class -->
-                <div class="padding-top-x70"></div>
-
                 <!-- Story 音樂製作 -->
                 <div class="row">
-                    <div class="col-sm-12" data-sr='wait 0.1s, ease-in 20px'>    
+                    <div class="col-sm-6" data-sr='wait 0.1s, ease-in 20px'> 
                         <h3>音樂製作</h3>
                         <div class="ws-footer-separator"></div>  
                         <p>【台灣故宮博物院兒童學藝中心】「兒藝藏寶閣」海怪國探險記、文物說故事音樂製作</p>    
@@ -222,16 +253,9 @@
                         <p>【靈魂的旅程The Journey of The Soul】金色畫境之光策展配樂</p>
                         <p>【兒童音樂劇糖果屋】於屏東大學音樂廳首演</p>
                         <p>【遠見保險經紀人委託創作】主題曲「才子家人」鋼琴編曲</p>
-                    </div> 
-                </div> 
-
-                <!-- Space Helper Class -->
-                <div class="padding-top-x70"></div>
-
-                <!-- Process 音樂企劃 -->
-                <div class="row vertical-align">
-                    <div class="col-sm-6" data-sr='wait 0.1s, ease-in 20px'>       
-                        <h3>音樂企劃：【嘖嘖募資－如何用音樂說故事：許惠鈞的音樂童話課】</h3>
+                        <br>
+                        <!-- 音樂企劃 -->
+                        <h3 style="margin-top: 50px;">音樂企劃：【嘖嘖募資－如何用音樂說故事：許惠鈞的音樂童話課】</h3>
                         <div class="ws-footer-separator"></div>     
                         <h5 style="margin-bottom: 10px;">音樂童話親子共讀共學，輕鬆進入富含文化素養的音樂殿堂。</h5> 
                         <p>【嘖嘖募資－世紀今日３６６】格林文化-「今天２」配樂與音樂製作人</p>
@@ -239,11 +263,11 @@
                         <p>新竹市社會處婦女節「女子百姓系列講座」節目音樂製作人</p>
                         <p>新竹縣文化局「世界閱讀日-非走book」閱讀上路記者會鋼琴演奏與說故事</p>
                         <p>【專輯設計合作】xPÊIHU印花</p>
-                    </div>
+                    </div> 
 
-                    <div class="col-sm-6" style="margin-top: 20px;">
+                    <div class="col-sm-6" style="padding: 50px 50px 0 50px">
                         <img src="assets/img/education/2.jpg" alt="Alternative Text" class="img-responsive">
-                    </div>                                    
+                    </div>  
                 </div> 
 
             </div> 
@@ -251,12 +275,10 @@
     </div>
     <!-- End Page Content --> 
 
-    <!-- About Section Start -->
-    <section class="ws-about-section">
-        <div class="container">
-        </div>
+    <!-- project Section Start -->
+    <section class="ws-project-section">
     </section>
-    <!-- About Section End -->   
+    <!-- project Section End -->   
 
     <!-- Page Content -->
     <div class="container ws-page-container">
@@ -275,160 +297,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="latest">
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/1.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/2.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/3.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/4.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/5.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/6.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/7.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/8.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/9.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/10.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/11.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/12.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/13.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/14.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/15.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/16.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/17.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/18.png" alt="Alternative Text">
@@ -437,7 +306,16 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/17.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/19.png" alt="Alternative Text">
@@ -446,7 +324,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/20.png" alt="Alternative Text">
@@ -455,7 +333,27 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/14.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/28.png" alt="Alternative Text">
+                                </figure>
+                                <p><span id="project-dots"></span></p>   
+                            </div>                           
+                        </div>
+
+                        <div id="project-more">
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/21.png" alt="Alternative Text">
@@ -464,7 +362,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/22.png" alt="Alternative Text">
@@ -473,7 +371,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/23.png" alt="Alternative Text">
@@ -482,7 +380,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/24.png" alt="Alternative Text">
@@ -491,16 +389,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning/25.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/26.png" alt="Alternative Text">
@@ -509,7 +398,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/27.png" alt="Alternative Text">
@@ -518,16 +407,43 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
-                                    <img src="assets/img/education/project-planning/28.png" alt="Alternative Text">
+                                    <img src="assets/img/education/project-planning/9.png" alt="Alternative Text">
                                 </figure>
                             </div>                           
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/10.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/11.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/12.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning/29.png" alt="Alternative Text">
@@ -535,13 +451,119 @@
                             </div>                           
                         </div>
 
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/8.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/13.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/15.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/16.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/4.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/5.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/7.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/3.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/6.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/1.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning/2.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+                        </div>
+
+                        <div class="ws-more-btn-holder col-sm-12">
+                            <a style="outline: none;">
+                                <button class="btn ws-more-btn" onclick="projectFunction()" id="project-myBtn">Load more</button>
+                            </a>
+                        </div>
+
                     </div>
 
                     <!-- Art -->
-                    <div role="tabpanel" class="tab-pane fade in active" id="art">
+                    <div role="tabpanel" class="tab-pane fade" id="art">
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning-2/1.png" alt="Alternative Text">
@@ -550,133 +572,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/2.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/3.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/4.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/5.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/6.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/7.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/8.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/9.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/10.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/11.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/12.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/13.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/14.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/15.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning-2/16.png" alt="Alternative Text">
@@ -685,34 +581,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/17.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/18.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/project-planning-2/19.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning-2/20.png" alt="Alternative Text">
@@ -721,7 +590,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning-2/21.png" alt="Alternative Text">
@@ -730,34 +599,54 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
-                                    <img src="assets/img/education/project-planning-2/22.png" alt="Alternative Text">
+                                    <img src="assets/img/education/project-planning-2/19.png" alt="Alternative Text">
                                 </figure>
                             </div>                           
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
-                                    <img src="assets/img/education/project-planning-2/23.png" alt="Alternative Text">
+                                    <img src="assets/img/education/project-planning-2/14.png" alt="Alternative Text">
+                                </figure>
+                                <p><span id="project-2-dots"></span></p> 
+                            </div>                           
+                        </div>
+
+                        <div id="project-2-more">
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/15.png" alt="Alternative Text">
                                 </figure>
                             </div>                           
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
-                                    <img src="assets/img/education/project-planning-2/24.png" alt="Alternative Text">
+                                    <img src="assets/img/education/project-planning-2/6.png" alt="Alternative Text">
                                 </figure>
                             </div>                           
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/18.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning-2/25.png" alt="Alternative Text">
@@ -766,12 +655,127 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/project-planning-2/26.png" alt="Alternative Text">
                                 </figure>
                             </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/9.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/2.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/7.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/8.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/10.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/11.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/12.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/13.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/17.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/22.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/23.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/project-planning-2/24.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+                        </div>
+
+                        <div class="ws-more-btn-holder col-sm-12">
+                            <a style="outline: none;">
+                                <button class="btn ws-more-btn" onclick="project_2_Function()" id="project-2-myBtn">Load more</button>
+                            </a>
                         </div>
 
                     </div>
@@ -804,7 +808,7 @@
                     <div class="ws-instagram-header">
                         <h3>Instagram</h3>     
                         <br>                   
-                        <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ws-instagram-link"> @hey_huichunhsu</a>
+                        <a href="https://www.instagram.com/hsupiano_official" target="_blank" class="ws-instagram-link"> @hsupiano_official</a>
                         <br>
                         <p style="margin-top: 10px;">許惠鈞，一位橫跨古典、新世紀、爵士與世界音樂的鋼琴家、創作家和聲音設計者，她的音樂風格涵蓋了古典音樂的優雅、新世紀音樂的清新、爵士的即興以及世界音樂的多元。</p>
                         <br>
@@ -831,10 +835,10 @@
 
         </div>
     </section>
-    <!-- End Instagram Content --> 
+    <!-- End Instagram Content -->  
 
-     <!-- Footer Start -->
-     <footer class="ws-footer">       
+    <!-- Footer Start -->
+    <footer class="ws-footer">       
         <div class="container">
             <div class="row">                                             
 
@@ -861,7 +865,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="albums.html">ALBUMS</a></li>                        
+                        <li><a href="story.html">EDUCATION</a></li>                    
                     </ul>                    
                 </div>  
 
@@ -870,7 +874,7 @@
                     <h3>Music</h3>         
                     <div class="ws-footer-separator"></div>                                                     
                     <ul>
-                        <li><a href="story.html">EDUCATION</a></li>
+                        <li><a href="albums.html">ALBUMS</a></li>  
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
                         <li><a href="store.html">STORE</a></li>
                         <li><a href="contact.html">CONTACT</a></li>                        
@@ -882,10 +886,9 @@
                     <h3>Socials</h3>   
                     <div class="ws-footer-separator"></div>                                         
                     <ul class="ws-footer-social">
-                        <li><a href="#x"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
-                        <li><a href="#x"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
-                        <li><a href="#x"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-                        <li><a href="#x"><i class="fa fa-pinterest fa-lg"></i> Pinterest</a></li>                        
+                        <li><a href="https://www.facebook.com/huichun222/?locale=zh_TW" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/hsupiano_official" target="_blank"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+                        <li><a href="https://lin.ee/n8jFB1p" target="_blank"><i class="lni lni-line" style="font-size: 13px;"></i> Line</a></li>                        
                     </ul>                    
                 </div> 
                    
@@ -928,5 +931,6 @@
     <script src="assets/js/plugins/scrollReveal.min.js"></script>
     <script src="assets/js/plugins/bootstrap-dropdownhover.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
     </body>
 </html>

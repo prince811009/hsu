@@ -37,7 +37,7 @@ Table of Contents:
 body{		
 	font-family: 'Merriweather', serif;
 	/* color: #999;	    */
-	font-size: 15px;
+	font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;	
 	outline: none;
@@ -130,16 +130,29 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	color: #fff;
 	background-color: #5B7493;
 }
+.ws-small-btn-listen{
+	font-size: 12px;		
+	letter-spacing: 3px;
+	padding: 10px 35px;
+	color: #fff;
+	background-color: #5B7493;
+}
+.ws-small-btn-listen:hover{
+	background-color: transparent;	
+	color: #5B7493;
+	border: 2px solid #5B7493;
+}
 .ws-big-btn{
 	font-size: 13px;		
 	letter-spacing: 3px;
 	padding: 15px 45px;
 	background-color: #B98A82;	
 	color: #fff;
+	border-radius: 3px;
 }
 .ws-big-btn:hover{
 	color: #fff;
-	background-color: #CB9B8F;
+	background-color: #D8B0B0;
 }
 .ws-big-btn a{
 	color: #fff;
@@ -616,6 +629,11 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	border-bottom: 1px solid #f2f2f2;
 	padding: 70px 0;
 }
+.ws-project-section{
+	text-align: center;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 0;
+}
 .ws-about-content h3{
 	font-size: 22px;		
 	color: #353535;
@@ -820,9 +838,9 @@ h3.ws-item-title{
 }
 .ws-item-sale{
 	position: absolute;
-    top: -3%;
-    left: -3%;    
-    background-color: #353535;
+    top: -5%;
+    left: 1%;    
+    background-color: #CB9B8F;
 	border-radius: 50%;
 	width: 60px;
 	height: 60px; 
@@ -1020,10 +1038,11 @@ span.minicart-content-remove{
     -ms-transition: .3s ease-in-out;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+	border-radius: 5px;
 }
 .ws-more-btn:hover{
 	color: #fff;
-	background-color: #CCB48E;	
+	background-color: #CEAEB9;	
 }
 .ws-login-form .form-group {
     margin: 0 0 20px 0;
@@ -1481,6 +1500,7 @@ tfoot.ws-checkout-shipping tr.ws-shipping-total td{
 	display: table;
     width: 100%;
     height: 100%;
+	margin-top: 30px;
 }
 .ws-parallax-caption .ws-parallax-holder{	
 	display: table-cell;
@@ -1638,10 +1658,9 @@ tfoot.ws-checkout-shipping tr.ws-shipping-total td{
 	min-height: 300px;
     background: transparent;    
 }
-
 /* Title */
 .ws-parallax-header .ws-parallax-holder h1{	
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 300;
 	letter-spacing: 2px;	
 	text-transform: uppercase;
@@ -1771,6 +1790,7 @@ tfoot.ws-checkout-shipping tr.ws-shipping-total td{
     display:inline-block;
     /* display:inline; */
     zoom:1;
+	margin: 7px;
 }
 .ws-journal-pagination .pager{
 	margin: 0;
@@ -1843,7 +1863,7 @@ tfoot.ws-checkout-shipping tr.ws-shipping-total td{
 	*/
 }
 .ws-journal-caption{
-	padding: 15px 0;
+	padding: 15px;
 }
 .ws-journal-caption h3{
 	font-size: 18px;
@@ -1857,7 +1877,7 @@ tfoot.ws-checkout-shipping tr.ws-shipping-total td{
 span.ws-journal-category{
 	color: #5B7493;	
 	font-style: italic;
-	padding-top: 15px;
+	padding: 15px;
 }
 
 /*--------------------------------------
@@ -1865,7 +1885,7 @@ span.ws-journal-category{
 ---------------------------------------*/
 .ws-breadcrumb{
 	border-top: 1px solid #f2f2f2;
-	padding-top: 70px;
+	padding-top: 140px;
 }
 .ws-breadcrumb .breadcrumb{
 	text-align: center;
@@ -2208,6 +2228,7 @@ ul.ws-footer-payments li{
 	.ws-subscribe-content .form-inline .form-control{width: 300px; margin: 0 auto;}	
 	#ws-instagram-section{text-align: center;}
 	.ws-instagram-item{padding-top: 15px;}
+	.ws-home-instagram-item{padding-top: 0px;}
 	.vertical-align{display: block;}	
 	.ws-shop-minicart{width: 100%;}
 	.ws-topbar ul.ws-shop-menu li.ws-shop-account{display: none;}
@@ -2375,7 +2396,7 @@ div:has(>blockquote) {
   .blockquote-lg.blockquote,
   .blockquote-lg .blockquote {
 	font-size: calc(1.50625rem + 0.675vw);
-	font-weight: 600;
+	font-weight: 500;
   }
   @media (min-width: 1200px) {
 	.blockquote-lg.blockquote,
@@ -2405,12 +2426,81 @@ div:has(>blockquote) {
 .home-social{
 	background-color: #edeae8;
 }
-.home-social.ws-instagram-item {
+.home-social.ws-home-instagram-item {
 	background: #ffffff;
 }
-.home-social .ws-instagram-item a{
+.home-social .ws-home-instagram-item a{
 	color: black;
     padding: 10px 50px;
     /* background: #ffffff;  */
     border-radius: 5px;
 }
+
+/*------------------------------------
+  Back to top
+------------------------------------*/
+
+#button {
+	display: inline-block;
+	background-color: #5B7493;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+  }
+  #button::after {
+	content: "\f077";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 47px;
+	color: #fff;
+  }
+  #button:hover {
+	cursor: pointer;
+	background-color: #333;
+  }
+  #button:active {
+	background-color: #555;
+  }
+  #button.show {
+	opacity: 1;
+	visibility: visible;
+  }
+  
+  /* Styles for the content section */
+  
+  .content {
+	width: 77%;
+	margin: 50px auto;
+	font-family: 'Merriweather', serif;
+	font-size: 17px;
+	color: #6c767a;
+	line-height: 1.9;
+  }
+  @media (min-width: 500px) {
+	.content {
+	  width: 43%;
+	}
+	#button {
+	  margin: 30px;
+	}
+  }
+  .content h1 {
+	margin-bottom: -10px;
+	color: #03a9f4;
+	line-height: 1.5;
+  }
+  .content h3 {
+	font-style: italic;
+	color: #96a2a7;
+  }

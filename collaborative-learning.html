@@ -25,7 +25,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo-2.png">
-    <link rel="canonical" href="https://www.tcymun2023.com/">
+    <link rel="canonical" href="https://www.hsupiano.com/">
 
     <!-- Jquery -->
     <script src="assets/js/plugins/jquery-1.11.3.min.js"></script>
@@ -51,6 +51,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
     <!-- Slider Revolution -->
     <script src="assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -68,11 +69,38 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+        function colFunction() {
+          var colDots = document.getElementById("col-dots");
+          var colMoreText = document.getElementById("col-more");
+          var colBtnText = document.getElementById("col-myBtn");
+        
+          if (colDots.style.display === "none") {
+            colDots.style.display = "inline";
+            colBtnText.innerHTML = "Load more"; 
+            colMoreText.style.display = "none";
+          } else {
+            colDots.style.display = "none";
+            colBtnText.innerHTML = "Load less"; 
+            colMoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #col-more {display: none;}
+    </style>
+
 </head>
-    <body>
+
+<body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->  
+
+    <!-- Back to top -->
+    <a id="button"></a>
 
     <!-- Loader Start -->
     <div id="preloader">
@@ -87,20 +115,8 @@
     </div>
     <!-- End Loader Start -->
 
-    <!-- Top Bar Start -->
-    <div class="ws-topbar">
-        <div class="pull-left">
-            <div class="ws-topbar-message hidden-xs">
-            </div>
-        </div>
-
-        <div class="pull-right">      
-        </div>
-    </div> 
-    <!-- Top Bar End -->
-
     <!-- Header Start -->
-    <header class="ws-header ws-header-transparent">                                    
+    <header class="ws-header ws-header-transparent" style="position: fixed; padding-bottom: 15px; background-color: #000000c9;">                                    
                     
         <!-- Navbar -->       
         <nav class="navbar ws-navbar navbar-default">
@@ -116,8 +132,9 @@
 
                 <!-- Logo -->      
                 <div class="ws-logo ws-center">
-                    <a href="index.html">
-                        <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive">
+                    <a href="index.html" class="logo-text">
+                        <!-- <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive"> -->
+                        HSUPIANO
                     </a>
                 </div>
                
@@ -163,7 +180,7 @@
                                 <li><a href="story.html">品牌故事</a></li> 
                                 <li><a href="project-planning.html">製作企劃</a></li>                                                            
                                 <li><a href="lectures-speeches.html">講座演講</a></li>                            
-                                <li><a href="academic-fields.html">學術領域</a></li>                          
+                                <li><a href="coldemic-fields.html">學術領域</a></li>                          
                                 <li><a href="collaborative-learning.html">共學共好</a></li>
                                 <li><a href="talent-unleashing.html">天賦開啟</a></li>                        
                             </ul>
@@ -182,7 +199,7 @@
             </div>
         </nav> 
     </header>
-    <!-- End Header -->   
+    <!-- End Header -->  
 
     <!-- Page Parallax Header -->
     <div class="ws-parallax-header parallax-window" data-parallax="scroll" data-image-src="assets/img/backgrounds/about-header-bg-1.jpg">        
@@ -203,13 +220,16 @@
                 <!-- Information -->
                 <p></p>
 
-                <!-- Space Helper Class -->
-                <div class="padding-top-x70"></div>
-
-                <!-- Story 師資培訓講座 -->
-                <div class="row">
-                    <div class="col-sm-12" data-sr='wait 0.1s, ease-in 20px'>    
-                        <h3>師資培訓講座</h3>
+                <!-- Team Members 專業者工作坊 -->
+                <div class="row vertical-align">
+                    <div class="col-sm-6" data-sr='wait 0.1s, ease-in 20px' style="margin: 20px 0px;">       
+                        <h3>專業者工作坊</h3>
+                        <div class="ws-footer-separator"></div>     
+                        <p>【清華大學藝術科技所】聲音製作工作坊講師</p>
+                        <p>【明新科技大學】音樂療癒研習講座：淺談療癒音樂</p>
+                        <p>【106年文化部-彰化美學館】文化研習課程應用藝術類學分班：實用美妝與配飾入門、音樂藝能類學分班：鋼琴初級指導入門</p>
+                        <br>
+                        <h3 style="margin-top: 50px;">師資培訓講座</h3>
                         <div class="ws-footer-separator"></div> 
                         <p>扶植教師專業形象，提供主題式師資培訓以及為教師一對一品牌客製化諮詢課程，幫助教師走在穩健教學與創新的道路，成為講師級教師。
                         </p> 
@@ -219,26 +239,10 @@
                         <p>【國立清華大學幼兒教育系】：幼兒藝術美感紙芝居故事劇場分享</p>
                         <p>【島嶼樂集】「聲」歷其境～ 親子繪本與音樂美感素養師資增能講座</p>
                         <p>【教育部美感計畫】興隆國小音樂課美感師資培訓指導</p>
-                    </div> 
-                </div> 
-
-                <!-- Space Helper Class -->
-                <div class="padding-top-x70"></div>
-
-                <!-- Team Members 專業者工作坊 -->
-                <div class="row vertical-align">
+                    </div>
                     <div class="col-sm-6">
                         <img src="assets/img/education/collaborative-learning/1.png" alt="Alternative Text" class="img-responsive" style="margin-bottom: 30px;">
                     </div>  
-
-                    <div class="col-sm-6" data-sr='wait 0.1s, ease-in 20px' style="margin: 20px 0px;">       
-                        <h3>專業者工作坊</h3>
-                        <div class="ws-footer-separator"></div>     
-                        <p>【清華大學藝術科技所】聲音製作工作坊講師</p>
-                        <p>【明新科技大學】音樂療癒研習講座：淺談療癒音樂</p>
-                        <p>【106年文化部-彰化美學館】文化研習課程應用藝術類學分班：實用美妝與配飾入門、音樂藝能類學分班：鋼琴初級指導入門</p>
-
-                    </div>
                 </div>
 
             </div> 
@@ -247,7 +251,7 @@
     <!-- End Page Content --> 
 
     <!-- About Section Start -->
-    <section class="ws-about-section">
+    <section class="ws-project-section">
     </section>
     <!-- About Section End -->   
 
@@ -257,131 +261,18 @@
             <div class="ws-journal-page">                
                 <!-- Categories Nav -->           
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">師資培訓講座</a></li>
-                    <li role="presentation" class=""><a href="#art1" aria-controls="art1" role="tab" data-toggle="tab">專業者工作坊</a></li>
+                    <li role="presentation" class="active"><a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">專業者工作坊</a></li>
+                    <li role="presentation" class=""><a href="#art1" aria-controls="art1" role="tab" data-toggle="tab">師資培訓講座</a></li>
                 </ul>
                 
                 <!-- Categories Content -->           
                 <div class="tab-content">
 
-                    <!-- Latest -->
+                    <!-- latest -->
                     <div role="tabpanel" class="tab-pane fade in active" id="latest">
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/1.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/2.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/3.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/4.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/5.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/6.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/7.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/8.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/9.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/10.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/11.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/education/collaborative-learning/learning/12.png" alt="Alternative Text">
-                                </figure>
-                            </div>                           
-                        </div>
-
-                    </div>
-
-                    <!-- art1 -->
-                    <div role="tabpanel" class="tab-pane fade in active" id="art1">
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/collaborative-learning/learning-2/1.png" alt="Alternative Text">
@@ -390,7 +281,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/collaborative-learning/learning-2/2.png" alt="Alternative Text">
@@ -399,7 +290,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/collaborative-learning/learning-2/3.png" alt="Alternative Text">
@@ -408,7 +299,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/collaborative-learning/learning-2/4.png" alt="Alternative Text">
@@ -417,7 +308,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/collaborative-learning/learning-2/5.png" alt="Alternative Text">
@@ -426,7 +317,7 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-4 ws-journal-item">                              
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/education/collaborative-learning/learning-2/6.png" alt="Alternative Text">
@@ -436,7 +327,127 @@
 
                     </div>
 
+                    <!-- art1 -->
+                    <div role="tabpanel" class="tab-pane fade" id="art1">
 
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/8.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/6.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/7.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/9.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/10.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/12.png" alt="Alternative Text">
+                                </figure>
+                                <p><span id="col-dots"></span></p>  
+                            </div>                           
+                        </div>
+
+                        <div id="col-more">
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/11.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/1.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/2.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/3.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/4.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">                              
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/education/collaborative-learning/learning/5.png" alt="Alternative Text">
+                                </figure>
+                            </div>                           
+                        </div> 
+                        </div>
+                                
+                        <div class="ws-more-btn-holder col-sm-12">
+                            <a style="outline: none;">
+                                <button class="btn ws-more-btn" onclick="colFunction()" id="col-myBtn">Load more</button>
+                            </a>
+                        </div>
+
+                    </div>
 
                 </div>  
 
@@ -466,7 +477,7 @@
                     <div class="ws-instagram-header">
                         <h3>Instagram</h3>     
                         <br>                   
-                        <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ws-instagram-link"> @hey_huichunhsu</a>
+                        <a href="https://www.instagram.com/hsupiano_official" target="_blank" class="ws-instagram-link"> @hsupiano_official</a>
                         <br>
                         <p style="margin-top: 10px;">許惠鈞，一位橫跨古典、新世紀、爵士與世界音樂的鋼琴家、創作家和聲音設計者，她的音樂風格涵蓋了古典音樂的優雅、新世紀音樂的清新、爵士的即興以及世界音樂的多元。</p>
                         <br>
@@ -493,10 +504,10 @@
 
         </div>
     </section>
-    <!-- End Instagram Content -->
+    <!-- End Instagram Content -->  
 
-     <!-- Footer Start -->
-     <footer class="ws-footer">       
+    <!-- Footer Start -->
+    <footer class="ws-footer">       
         <div class="container">
             <div class="row">                                             
 
@@ -523,7 +534,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="albums.html">ALBUMS</a></li>                        
+                        <li><a href="story.html">EDUCATION</a></li>                    
                     </ul>                    
                 </div>  
 
@@ -532,7 +543,7 @@
                     <h3>Music</h3>         
                     <div class="ws-footer-separator"></div>                                                     
                     <ul>
-                        <li><a href="story.html">EDUCATION</a></li>
+                        <li><a href="albums.html">ALBUMS</a></li>  
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
                         <li><a href="store.html">STORE</a></li>
                         <li><a href="contact.html">CONTACT</a></li>                        
@@ -544,10 +555,9 @@
                     <h3>Socials</h3>   
                     <div class="ws-footer-separator"></div>                                         
                     <ul class="ws-footer-social">
-                        <li><a href="#x"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
-                        <li><a href="#x"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
-                        <li><a href="#x"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-                        <li><a href="#x"><i class="fa fa-pinterest fa-lg"></i> Pinterest</a></li>                        
+                        <li><a href="https://www.facebook.com/huichun222/?locale=zh_TW" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/hsupiano_official" target="_blank"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+                        <li><a href="https://lin.ee/n8jFB1p" target="_blank"><i class="lni lni-line" style="font-size: 13px;"></i> Line</a></li>                        
                     </ul>                    
                 </div> 
                    
@@ -590,5 +600,6 @@
     <script src="assets/js/plugins/scrollReveal.min.js"></script>
     <script src="assets/js/plugins/bootstrap-dropdownhover.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
     </body>
 </html>

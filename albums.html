@@ -25,7 +25,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo-2.png">
-    <link rel="canonical" href="https://www.tcymun2023.com/">
+    <link rel="canonical" href="https://www.hsupiano.com/">
 
     <!-- Jquery -->
     <script src="assets/js/plugins/jquery-1.11.3.min.js"></script>
@@ -51,6 +51,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
     <!-- Slider Revolution -->
     <script src="assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -69,11 +70,15 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
 </head>
-    <body>
+
+<body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->  
 
+    <!-- Back to top -->
+    <a id="button"></a>
+    
     <!-- Loader Start -->
     <div id="preloader">
         <div class="preloader-container">
@@ -87,20 +92,8 @@
     </div>
     <!-- End Loader Start -->
 
-    <!-- Top Bar Start -->
-    <div class="ws-topbar">
-        <div class="pull-left">
-            <div class="ws-topbar-message hidden-xs">
-            </div>
-        </div>
-
-        <div class="pull-right">      
-        </div>
-    </div> 
-    <!-- Top Bar End -->
-
     <!-- Header Start -->
-    <header class="ws-header ws-header-transparent">                                    
+    <header class="ws-header ws-header-transparent" style="position: fixed; padding-bottom: 15px; background-color: #000000c9;">                                    
                     
         <!-- Navbar -->       
         <nav class="navbar ws-navbar navbar-default">
@@ -116,8 +109,9 @@
 
                 <!-- Logo -->      
                 <div class="ws-logo ws-center">
-                    <a href="index.html">
-                        <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive">
+                    <a href="index.html" class="logo-text">
+                        <!-- <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive"> -->
+                        HSUPIANO
                     </a>
                 </div>
                
@@ -182,7 +176,7 @@
             </div>
         </nav> 
     </header>
-    <!-- End Header -->   
+    <!-- End Header -->    
 
     <!-- Page Parallax Header -->
     <div class="ws-parallax-header parallax-window" data-parallax="scroll" data-image-src="assets/img/albums/albums-bg-1.jpg">        
@@ -242,22 +236,35 @@
             <div class="ws-journal-page">                
                 <!-- Categories Nav -->           
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">所有專輯</a></li>
+                    <!-- <li role="presentation" class="active"><a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">所有專輯</a></li> -->
+                    <li role="presentation" class="active"><a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">暢銷專輯</a></li>
+                    <li role="presentation" class=""><a href="#music-1" aria-controls="music-1" role="tab" data-toggle="tab">宮崎駿音樂</a></li>
+                    <li role="presentation" class=""><a href="#music-2" aria-controls="music-2" role="tab" data-toggle="tab">迪士尼音樂</a></li>
+                    <li role="presentation" class=""><a href="#music-3" aria-controls="music-3" role="tab" data-toggle="tab">寶寶睡眠</a></li>
+                    <li role="presentation" class=""><a href="#music-4" aria-controls="music-4" role="tab" data-toggle="tab">親子/故事</a></li>
+                    <li role="presentation" class=""><a href="#music-5" aria-controls="music-5" role="tab" data-toggle="tab">爵士日常</a></li>
+                    <li role="presentation" class=""><a href="#music-6" aria-controls="music-6" role="tab" data-toggle="tab">睡眠/輕音樂</a></li>
                 </ul>
                 
                 <!-- Categories Content -->           
                 <div class="tab-content">
 
-                    <!-- Latest -->
-                    <div role="tabpanel" class="tab-pane fade in active" id="latest">
+                    <!-- Hot -->
+                    <div role="tabpanel" class="tab-pane fade in active" id="hot">
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/2.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/track/12Fe5fi5Nvs25mDC8afwlV" target="_blank">
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/2.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a> 
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -268,28 +275,18 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/1.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/3.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/2FQqwIGZ9QZ2MLcWU0AkeH" target="_blank">                            
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/4.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -300,12 +297,18 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/4.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/26dmNBRFNnHtzSg2dQpdFH" target="_blank">                            
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/3.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -316,12 +319,18 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/47.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item">   
+                            <a href="https://open.spotify.com/album/2ZUyEUPLqDDHvGm1wIiHSO" target="_blank">                           
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/47.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -332,12 +341,342 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/8.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/2K2g4ts9FGqRMcd3PsLOir" target="_blank">                            
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/1.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+                    </div>
+
+                    <!-- 宮崎駿音樂 -->
+                    <div role="tabpanel" class="tab-pane fade" id="music-1">
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">
+                            <a href="https://open.spotify.com/album/3BhBLvuvZ8mwKUUWHmA2pg" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/11.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/6EOre2bTad4axtCNNxs22l" target="_blank">                            
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/27.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/608sgDPSdT18QC0SsOft16" target="_blank">                            
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/23.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+                    </div>
+
+                    <!-- 迪士尼音樂 -->
+                    <div role="tabpanel" class="tab-pane fade" id="music-2">
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">   
+                            <a href="https://open.spotify.com/album/3TQoJs9yh6LU5jHmcEcAHY" target="_blank">                           
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/14.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/2IH8rg2oc3ER89vKGokTFW" target="_blank">                            
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/16.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-4 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/2nP7dlgda4lqo2xV1QfyZ7" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/35.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+                    </div> 
+
+                    <!-- 寶寶睡眠 -->
+                    <div role="tabpanel" class="tab-pane fade" id="music-3">
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/1U6HCzmMgwR3FFLPBR7hSk" target="_blank">
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/9.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/47pVNMoaKtm4LKTniFpmbJ" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/32.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a> 
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/playlist/7Ip8q3u9Kt57Z9oyJb4xAV" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/40.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/1HAXDZYcoE6BeQK0kWbPpL" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/51.png" alt="Alternative Text">
+                                    </figure>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a> 
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/2C5QugNKyepe8Uiu86dP1c" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/52.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/5M5HDFRibO2CHRfT6dtnsh" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/53.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/0GI8owI1ewLjHhNV4ZFC2E" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/42.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/42Kjcx5wkw255JBMJ2CIPV" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/49.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -348,28 +687,19 @@
                         </div>
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/9.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/75P0LJuKoNyjv6BoAN8L5I" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/36.png" alt="Alternative Text">
+                                    </figure>
 
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/10.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -380,279 +710,7 @@
                         </div> 
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/11.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/12.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/13.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/14.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/15.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/16.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/17.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/19.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/20.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/21.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/22.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/23.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/24.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/25.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/26.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/27.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/28.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-3 ws-journal-item">                          
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/albums/29.png" alt="Alternative Text">
@@ -665,15 +723,26 @@
                             </div>                   
                             <span class="ws-journal-category">Home</span>
                             -->                             
-                        </div>  
+                        </div>
+                    </div>
+
+                    <!-- 親子/故事 -->
+                    <div role="tabpanel" class="tab-pane fade" id="music-4">
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/30.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item">  
+                            <a href="https://open.spotify.com/album/3SGgiApEoy4wuiQiNwKAvk" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/17.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -683,45 +752,20 @@
                             -->                             
                         </div> 
 
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/31.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/32.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
+                        <div class="col-sm-4 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/5QUqCQuL7hp6aaSQHznddV" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/21.png" alt="Alternative Text">
+                                    </figure>
 
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/33.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -732,12 +776,45 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/34.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-4 ws-journal-item"> 
+                            <a href="https://open.spotify.com/playlist/6uG46Hht0Z6sRJITwEUiIw" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/50.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+                    </div>
+
+                    <!-- 爵士日常 -->
+                    <div role="tabpanel" class="tab-pane fade" id="music-5">
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/2embf1wKqHgfleLE4G6nVT" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/24.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -747,13 +824,117 @@
                             -->                             
                         </div> 
 
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/35.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/4kABCgfDZSlJKGrMWIlR4t" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/20.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/3xLOTVn3QKZcEsUVeBJzfR" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/34.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>
+                        
+                        <!-- Item -->
+                            <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/09RL3cmttKVEJwO6duR61B" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/45.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                    </div>
+
+                    <!-- 睡眠/輕音樂 -->
+                    <div role="tabpanel" class="tab-pane fade" id="music-6">
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/1ruIO4ipOGDdJlPrMwwGvT" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/8.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>   
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/133WQy5S0XEZRAxUYGg4a4" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/15.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a> 
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -764,12 +945,19 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/36.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/0Wl0sRDq4p8eRursEUH2nJ" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/22.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -779,13 +967,20 @@
                             -->                             
                         </div> 
 
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/37.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/3nOd5fKnlav8mWajMgvWkM" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/25.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -796,12 +991,65 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/38.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/4mgDNKvr6LljQtC2n5UeZi" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/26.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/5JPx1U3sQXewivcrAPjWBY" target="_blank">                              
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/28.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/0dRAcirkYpD76m63gjuDYq" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/30.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -812,12 +1060,19 @@
                         </div> 
 
                          <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/39.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                         <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/4a5H5WBRD4m5EJzpNhCBuX" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/37.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -828,12 +1083,19 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/40.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/69DayafP0IMsVSgqbrO7Wy" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/38.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -843,13 +1105,43 @@
                             -->                             
                         </div> 
 
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/41.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item"> 
+                            <a href="https://open.spotify.com/album/1lrpoQ5hkfkzgRguJvcABn" target="_blank">                             
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/43.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a> 
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+                        
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/3mdo42i5v7pajdOQcxh2ei" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/13.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -860,12 +1152,19 @@
                         </div>  
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/42.png" alt="Alternative Text">
-                                </figure>
-                            </div>
+                        <div class="col-sm-3 ws-journal-item">
+                            <a href="https://open.spotify.com/album/6XYVJXn5ncOgwtmycnMHOq" target="_blank">                               
+                                <div class="ws-journal-image">
+                                    <figure>
+                                        <img src="assets/img/albums/19.png" alt="Alternative Text">
+                                    </figure>
+
+                                    <!-- 點我去試聽 Caption -->
+                                    <div class="ws-item-sale">
+                                        <span>去試聽</span>
+                                    </div>
+                                </div>
+                            </a>  
                             <!-- 
                             <div class="ws-journal-caption">
                                 <h3>Good Thing shares the story behind their objects of remarkable use</h3>
@@ -874,54 +1173,6 @@
                             <span class="ws-journal-category">Home</span>
                             -->                             
                         </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/43.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/44.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/45.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
 
                         <!-- Item -->
                         <div class="col-sm-3 ws-journal-item">                              
@@ -940,7 +1191,7 @@
                         </div> 
 
                         <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
+                        <div class="col-sm-3 ws-journal-item">                             
                             <div class="ws-journal-image">
                                 <figure>
                                     <img src="assets/img/albums/48.png" alt="Alternative Text">
@@ -953,87 +1204,7 @@
                             </div>                   
                             <span class="ws-journal-category">Home</span>
                             -->                             
-                        </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/49.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/50.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/51.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
-
-                        <!-- Item -->
-                        <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/52.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div> 
-
-                         <!-- Item -->
-                         <div class="col-sm-3 ws-journal-item">                              
-                            <div class="ws-journal-image">
-                                <figure>
-                                    <img src="assets/img/albums/53.png" alt="Alternative Text">
-                                </figure>
-                            </div>
-                            <!-- 
-                            <div class="ws-journal-caption">
-                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
-                            </div>                   
-                            <span class="ws-journal-category">Home</span>
-                            -->                             
-                        </div>  
+                        </div>
 
                         <!-- Item -->
                         <div class="col-sm-3 ws-journal-item">                              
@@ -1065,7 +1236,105 @@
                             </div>                   
                             <span class="ws-journal-category">Home</span>
                             -->                             
-                        </div>                      
+                        </div>
+
+                         <!-- Item -->
+                         <div class="col-sm-3 ws-journal-item">                             
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/albums/31.png" alt="Alternative Text">
+                                </figure>
+                            </div>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+                         <!-- Item -->
+                         <div class="col-sm-3 ws-journal-item">                             
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/albums/33.png" alt="Alternative Text">
+                                </figure>
+                            </div>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+                         <!-- Item -->
+                         <div class="col-sm-3 ws-journal-item">                             
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/albums/41.png" alt="Alternative Text">
+                                </figure>
+                            </div>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
+
+
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">                             
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/albums/44.png" alt="Alternative Text">
+                                </figure>
+                            </div>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>     
+                        
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">                             
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/albums/10.png" alt="Alternative Text">
+                                </figure>
+                            </div>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div> 
+
+                        <!-- Item -->
+                        <div class="col-sm-3 ws-journal-item">                             
+                            <div class="ws-journal-image">
+                                <figure>
+                                    <img src="assets/img/albums/12.png" alt="Alternative Text">
+                                </figure>
+                            </div>
+                            <!-- 
+                            <div class="ws-journal-caption">
+                                <h3>Good Thing shares the story behind their objects of remarkable use</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ...</p>                                    
+                            </div>                   
+                            <span class="ws-journal-category">Home</span>
+                            -->                             
+                        </div>  
 
                     </div>
 
@@ -1102,7 +1371,7 @@
                     <div class="ws-instagram-header">
                         <h3>Instagram</h3>     
                         <br>                   
-                        <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ws-instagram-link"> @hey_huichunhsu</a>
+                        <a href="https://www.instagram.com/hsupiano_official" target="_blank" class="ws-instagram-link"> @hsupiano_official</a>
                         <br>
                         <p style="margin-top: 10px;">許惠鈞，一位橫跨古典、新世紀、爵士與世界音樂的鋼琴家、創作家和聲音設計者，她的音樂風格涵蓋了古典音樂的優雅、新世紀音樂的清新、爵士的即興以及世界音樂的多元。</p>
                         <br>
@@ -1129,7 +1398,7 @@
 
         </div>
     </section>
-    <!-- End Instagram Content --> 
+    <!-- End Instagram Content -->  
 
     <!-- Footer Start -->
     <footer class="ws-footer">       
@@ -1159,7 +1428,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="albums.html">ALBUMS</a></li>                        
+                        <li><a href="story.html">EDUCATION</a></li>                    
                     </ul>                    
                 </div>  
 
@@ -1168,7 +1437,7 @@
                     <h3>Music</h3>         
                     <div class="ws-footer-separator"></div>                                                     
                     <ul>
-                        <li><a href="story.html">EDUCATION</a></li>
+                        <li><a href="albums.html">ALBUMS</a></li>  
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
                         <li><a href="store.html">STORE</a></li>
                         <li><a href="contact.html">CONTACT</a></li>                        
@@ -1180,10 +1449,9 @@
                     <h3>Socials</h3>   
                     <div class="ws-footer-separator"></div>                                         
                     <ul class="ws-footer-social">
-                        <li><a href="#x"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
-                        <li><a href="#x"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
-                        <li><a href="#x"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-                        <li><a href="#x"><i class="fa fa-pinterest fa-lg"></i> Pinterest</a></li>                        
+                        <li><a href="https://www.facebook.com/huichun222/?locale=zh_TW" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/hsupiano_official" target="_blank"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+                        <li><a href="https://lin.ee/n8jFB1p" target="_blank"><i class="lni lni-line" style="font-size: 13px;"></i> Line</a></li>                        
                     </ul>                    
                 </div> 
                    
@@ -1226,5 +1494,6 @@
     <script src="assets/js/plugins/scrollReveal.min.js"></script>
     <script src="assets/js/plugins/bootstrap-dropdownhover.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
     </body>
 </html>

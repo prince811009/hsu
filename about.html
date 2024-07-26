@@ -24,8 +24,8 @@
     <meta property="og:url" content="https://www.hsupiano.com/">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo.jpg">
-    <link rel="canonical" href="https://www.tcymun2023.com/">
+    <link rel="shortcut icon" href="assets/img/logo-2.png">
+    <link rel="canonical" href="https://www.hsupiano.com/">
 
     <!-- Jquery -->
     <script src="assets/js/plugins/jquery-1.11.3.min.js"></script>
@@ -51,6 +51,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
     <!-- Slider Revolution -->
     <script src="assets/js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -69,10 +70,14 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
 </head>
-    <body>
+
+<body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->  
+
+    <!-- Back to top -->
+    <a id="button"></a>
 
     <!-- Loader Start -->
     <div id="preloader">
@@ -87,20 +92,8 @@
     </div>
     <!-- End Loader Start -->
 
-    <!-- Top Bar Start -->
-    <div class="ws-topbar">
-        <div class="pull-left">
-            <div class="ws-topbar-message hidden-xs">
-            </div>
-        </div>
-
-        <div class="pull-right">      
-        </div>
-    </div> 
-    <!-- Top Bar End -->
-
     <!-- Header Start -->
-    <header class="ws-header ws-header-transparent">                                    
+    <header class="ws-header ws-header-transparent" style="position: fixed; padding-bottom: 15px; background-color: #000000c9;">                                    
                     
         <!-- Navbar -->       
         <nav class="navbar ws-navbar navbar-default">
@@ -116,8 +109,9 @@
 
                 <!-- Logo -->      
                 <div class="ws-logo ws-center">
-                    <a href="index.html">
-                        <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive">
+                    <a href="index.html" class="logo-text">
+                        <!-- <img src="assets/img/logo-2.png" alt="Alternative Text" class="img-responsive"> -->
+                        HSUPIANO
                     </a>
                 </div>
                
@@ -182,7 +176,7 @@
             </div>
         </nav> 
     </header>
-    <!-- End Header -->     
+    <!-- End Header -->      
 
     <!-- Page Parallax Header -->
     <div class="ws-parallax-header parallax-window" data-parallax="scroll" data-image-src="assets/img/backgrounds/about-header-bg-1.jpg">        
@@ -219,7 +213,7 @@
 
                 <!-- Story -->
                 <div class="row">
-                    <div class="col-sm-12" data-sr='wait 0.1s, ease-in 2px'>    
+                    <div class="col-sm-12">    
                         <h3>介紹</h3>
                         <div class="ws-footer-separator"></div>      
                         <p>許惠鈞，一位橫跨古典、新世紀、爵士與世界音樂的鋼琴家、創作家和聲音設計者，她的音樂風格涵蓋了古典音樂的優雅、新世紀音樂的清新、爵士的即興以及世界音樂的多元。她的音樂簡單純淨、溫暖柔美，加上無懈可擊的演奏技巧，讓她榮獲「台灣最受歡迎的療癒系鋼琴家」美譽，同時也是即興演奏的高手和專業評審。</p>
@@ -312,7 +306,7 @@
                     <div class="ws-instagram-header">
                         <h3>Instagram</h3>     
                         <br>                   
-                        <a href="https://www.instagram.com/hey_huichunhsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ws-instagram-link"> @hey_huichunhsu</a>
+                        <a href="https://www.instagram.com/hsupiano_official" target="_blank" class="ws-instagram-link"> @hsupiano_official</a>
                         <br>
                         <p style="margin-top: 10px;">許惠鈞，一位橫跨古典、新世紀、爵士與世界音樂的鋼琴家、創作家和聲音設計者，她的音樂風格涵蓋了古典音樂的優雅、新世紀音樂的清新、爵士的即興以及世界音樂的多元。</p>
                         <br>
@@ -327,7 +321,7 @@
                 </div>    
 
                 <!-- Instagram Item -->
-                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.3s, ease-in 20px'>
+                <div class="col-sm-4 ws-instagram-item" data-sr='wait 0.1s, ease-in 20px'>
                     <img src="assets/img/journal/9-1.jpg" alt="Alternative Text" class="img-responsive">
                 </div>   
 
@@ -369,7 +363,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="albums.html">ALBUMS</a></li>                        
+                        <li><a href="story.html">EDUCATION</a></li>                    
                     </ul>                    
                 </div>  
 
@@ -378,7 +372,7 @@
                     <h3>Music</h3>         
                     <div class="ws-footer-separator"></div>                                                     
                     <ul>
-                        <li><a href="story.html">EDUCATION</a></li>
+                        <li><a href="albums.html">ALBUMS</a></li>  
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
                         <li><a href="store.html">STORE</a></li>
                         <li><a href="contact.html">CONTACT</a></li>                        
@@ -390,10 +384,9 @@
                     <h3>Socials</h3>   
                     <div class="ws-footer-separator"></div>                                         
                     <ul class="ws-footer-social">
-                        <li><a href="#x"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
-                        <li><a href="#x"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
-                        <li><a href="#x"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
-                        <li><a href="#x"><i class="fa fa-pinterest fa-lg"></i> Pinterest</a></li>                        
+                        <li><a href="https://www.facebook.com/huichun222/?locale=zh_TW" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/hsupiano_official" target="_blank"><i class="fa fa-instagram fa-lg"></i> Instagram</a></li>
+                        <li><a href="https://lin.ee/n8jFB1p" target="_blank"><i class="lni lni-line" style="font-size: 13px;"></i> Line</a></li>                        
                     </ul>                    
                 </div> 
                    
@@ -436,5 +429,6 @@
     <script src="assets/js/plugins/scrollReveal.min.js"></script>
     <script src="assets/js/plugins/bootstrap-dropdownhover.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
     </body>
 </html>
