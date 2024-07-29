@@ -69,63 +69,6 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-    
-    <script>
-        function tal_1_Function() {
-          var talDots = document.getElementById("tal-1-dots");
-          var talMoreText = document.getElementById("tal-1-more");
-          var talBtnText = document.getElementById("tal-1-myBtn");
-        
-          if (talDots.style.display === "none") {
-            lecDots.style.display = "inline";
-            talBtnText.innerHTML = "Load more"; 
-            talMoreText.style.display = "none";
-          } else {
-            talDots.style.display = "none";
-            talBtnText.innerHTML = "Load less"; 
-            talMoreText.style.display = "inline";
-          }
-        }
-
-        function tal_2_Function() {
-          var tal2Dots = document.getElementById("tal-2-dots");
-          var tal2MoreText = document.getElementById("tal-2-more");
-          var tal2BtnText = document.getElementById("tal-2-myBtn");
-        
-          if (tal2Dots.style.display === "none") {
-            tal2Dots.style.display = "inline";
-            tal2BtnText.innerHTML = "Load more"; 
-            tal2MoreText.style.display = "none";
-          } else {
-            tal2Dots.style.display = "none";
-            tal2BtnText.innerHTML = "Load less"; 
-            tal2MoreText.style.display = "inline";
-          }
-        }
-
-        function tal_3_Function() {
-          var tal3Dots = document.getElementById("tal-3-dots");
-          var tal3MoreText = document.getElementById("tal-3-more");
-          var tal3BtnText = document.getElementById("tal-3-myBtn");
-        
-          if (tal3Dots.style.display === "none") {
-            tal3Dots.style.display = "inline";
-            tal3BtnText.innerHTML = "Load more"; 
-            tal3MoreText.style.display = "none";
-          } else {
-            tal3Dots.style.display = "none";
-            tal3BtnText.innerHTML = "Load less"; 
-            tal3MoreText.style.display = "inline";
-          }
-        }
-    </script>
-
-    <style>
-        #tal-1-more {display: none;}
-        #tal-2-more {display: none;}
-        #tal-3-more {display: none;}
-    </style> 
-
 </head>
 
 <body>
@@ -200,36 +143,39 @@
                             <a href="albums.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">ALBUMS<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="albums.html">所有專輯</a></li>
-                                <li><a href="album-introduce.html">專輯介紹</a></li>
+                                <!-- 商店 -->
+                                <li><a href="store.html">暢銷專輯系列</a></li>
+                                <li><a href="album-introduce.html">療癒專輯介紹</a></li>
                             </ul>
                         </li>
                     </ul>
 
                     <!-- 右側選項 -->
-                    <ul class="nav navbar-nav navbar-right">     
+                    <ul class="nav navbar-nav navbar-right">
+
                         <!-- 教育 -->                       
                         <li class="dropdown">
-                            <a href="story.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">EDUCATION<span class="caret"></span></a>
+                            <a href="lectures-speeches.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">EDUCATION<span class="caret"></span></a>
+                            <ul class="dropdown-menu">                                                           
+                                <li><a href="lectures-speeches.html">講座演講</a></li>                            
+                                <li><a href="academic-fields.html">學術領域</a></li>                                                 
+                            </ul>
+                        </li> 
+                        
+                        <!-- 品牌 -->
+                        <li class="dropdown">
+                            <a href="story.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">BRAND<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="story.html">品牌故事</a></li> 
-                                <li><a href="project-planning.html">製作企劃</a></li>                                                            
-                                <li><a href="lectures-speeches.html">講座演講</a></li>                            
-                                <li><a href="academic-fields.html">學術領域</a></li>                          
+                                <li><a href="project-planning.html">製作企劃</a></li>                                                                                     
                                 <li><a href="collaborative-learning.html">共學共好</a></li>
-                                <li class="dropdown">
-                                    <a href="talent-unleashing.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">天賦開啟<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="talent-unleashing.html">音樂陪伴課程</a></li>
-                                        <li><a href="guidance.html">音樂專業指導</a></li>
-                                    </ul>
-                                </li>                        
+                                <li><a href="talent-unleashing.html">音樂陪伴課程</a></li>
+                                <li><a href="guidance.html">音樂專業指導</a></li>                       
                             </ul>
-                        </li>  
+                        </li> 
+
                         <!-- 樂譜 -->
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
-
-                        <!-- 商店 -->
-                        <li><a href="store.html">STORE</a></li>
 
                         <!-- 聯絡我 -->
                         <li><a href="contact.html">CONTACT</a></li>                      
@@ -239,66 +185,38 @@
             </div>
         </nav> 
     </header>
-    <!-- End Header -->   
+    <!-- End Header -->    
 
     <!-- Page Parallax Header -->
     <div class="ws-parallax-header parallax-window" data-parallax="scroll" data-image-src="assets/img/education/talent-unleashing/01.jpg">        
         <div class="ws-overlay">            
             <div class="ws-parallax-caption">                
                 <div class="ws-parallax-holder">
-                    <h1>天賦開啟</h1>                        
+                    <h1>音樂陪伴課程</h1>                        
                 </div>
             </div>
         </div>            
     </div>            
     <!-- End Page Parallax Header -->
 
-    <!-- TAB CONTROLLERS -->
-    <input id="panel-1-ctrl"
-        class="panel-radios" type="radio" name="tab-radios" checked>
-    <input id="panel-2-ctrl"
-        class="panel-radios" type="radio" name="tab-radios">
-    <input id="panel-3-ctrl"
-        class="panel-radios" type="radio" name="tab-radios">
-    <input id="panel-4-ctrl"
-        class="panel-radios" type="radio" name="tab-radios">
-    <input id="panel-5-ctrl"
-        class="panel-radios" type="radio" name="tab-radios">
-    <input id="nav-ctrl"
-        class="panel-radios" type="checkbox" name="nav-checkbox" checked>
-
-    <!-- TABS LIST -->
-    <ul id="tabs-list" style="margin-top: 50px;">
-        <!-- MENU TOGGLE -->
-        <label id="open-nav-label" for="nav-ctrl"></label>
-        <li id="li-for-panel-1">
-        <label class="panel-label"
-                for="panel-1-ctrl">陪伴課程介紹</label>
-        </li>
-
-        <!--INLINE-BLOCK FIX--><li id="li-for-panel-2">
-        <label class="panel-label"
-                for="panel-2-ctrl">A. 孩子的課程
-            </label>
-        </li>
-        
-        <!--INLINE-BLOCK FIX--><li id="li-for-panel-3">
-        <label class="panel-label"
-                for="panel-3-ctrl">B. 孩子的活動</label>
-        </li>
-        
-        <!--INLINE-BLOCK FIX--><li id="li-for-panel-4">
-        <label class="panel-label"
-                for="panel-4-ctrl">C. 孩子的音樂會</label>
-        </li>
-    </ul>
-
-    <!-- THE PANELS -->
-    <article id="panels">
+    <section class="ws-talent-section">
     <div class="container">
+        <div class="row">
+      
+          <div class="tabbable">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">陪伴課程介紹</a></li>
+              <li><a href="#tab2" data-toggle="tab">A. 孩子的課程</a></li>
+              <li><a href="#tab3" data-toggle="tab">B. 孩子的活動</a></li>
+              <li><a href="#tab4" data-toggle="tab">C. 孩子的音樂會</a></li>
+            </ul>
 
-        <section id="panel-1">
-            <main>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                
+                <!-- Space Helper Class -->
+                <div class="padding-top-x70"></div>
+
                 <!-- Information -->
                 <div style="margin-bottom: 50px;">
                     <blockquote cite="https://www.huxley.net/bnw/four.html">
@@ -314,7 +232,7 @@
                 <!-- Story 音樂陪伴課程 -->
                 <div class="row">
                     <div class="col-sm-12">    
-                        <h3>音樂陪伴課程 ３－６歲
+                        <h3>天賦開啟｜音樂陪伴課程 ３－６歲
                         </h3>
                         <div class="ws-footer-separator"></div> 
                         <p>A. 孩子的課程：幼兒音樂律動
@@ -349,12 +267,13 @@
 
                     </div>
                 </div>
-            </main>
-        </section>
-        
+              </div>
 
-        <section id="panel-2">
-            <main>
+              <div class="tab-pane" id="tab2">
+
+                <!-- Space Helper Class -->
+                <div class="padding-top-x70"></div>
+                                
                 <!-- Team Members 孩子的課程：幼兒音樂律動 -->
                 <div class="row">
                     <div class="col-sm-12" style="margin: 20px 0px;">       
@@ -836,11 +755,13 @@
                     </div>
                 </div>
                 <!-- End Page Content --> 
-            </main>                 
-        </section>
+              </div>
 
-        <section id="panel-3">
-            <main>
+              <div class="tab-pane" id="tab3">
+
+                <!-- Space Helper Class -->
+                <div class="padding-top-x70"></div>
+
                 <!-- Team Members 孩子的活動：親子音樂活動 -->
                 <div class="row">
                     <div class="col-sm-12" style="margin: 20px 0px;">       
@@ -1002,11 +923,13 @@
                     </div>
                 </div>
                 <!-- End Page Content -->
-            </main>
-        </section>
+              </div>
 
-        <section id="panel-4">
-            <main>
+              <div class="tab-pane" id="tab4">
+
+                <!-- Space Helper Class -->
+                <div class="padding-top-x70"></div>
+
                 <!-- Team Members 孩子的音樂會：親子繪畫音樂會 -->
                 <div class="row vertical-align">
                     <div class="col-sm-6" style="margin: 20px 0px;">     
@@ -1268,10 +1191,13 @@
                     </div>
                 </div>
                 <!-- End Page Content -->
-            </main>
-        </section>
-    </div>
-    </article>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </section>
 
     <!-- Instagram Content -->
     <section id="ws-instagram-section">

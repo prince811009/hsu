@@ -69,63 +69,6 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-    <script>
-        function acaFunction() {
-          var acaDots = document.getElementById("aca-dots");
-          var acaMoreText = document.getElementById("aca-more");
-          var acaBtnText = document.getElementById("aca-myBtn");
-        
-          if (acaDots.style.display === "none") {
-            acaDots.style.display = "inline";
-            acaBtnText.innerHTML = "Load more"; 
-            acaMoreText.style.display = "none";
-          } else {
-            acaDots.style.display = "none";
-            acaBtnText.innerHTML = "Load less"; 
-            acaMoreText.style.display = "inline";
-          }
-        }
-
-        function aca_2_Function() {
-          var aca_2_Dots = document.getElementById("aca-2-dots");
-          var aca_2_MoreText = document.getElementById("aca-2-more");
-          var aca_2_BtnText = document.getElementById("aca-2-myBtn");
-        
-          if (aca_2_Dots.style.display === "none") {
-            aca_2_Dots.style.display = "inline";
-            aca_2_BtnText.innerHTML = "Load more"; 
-            aca_2_MoreText.style.display = "none";
-          } else {
-            aca_2_Dots.style.display = "none";
-            aca_2_BtnText.innerHTML = "Load less"; 
-            aca_2_MoreText.style.display = "inline";
-          }
-        }
-
-        function aca_3_Function() {
-          var aca_3_Dots = document.getElementById("aca-3-dots");
-          var aca_3_MoreText = document.getElementById("aca-3-more");
-          var aca_3_BtnText = document.getElementById("aca-3-myBtn");
-        
-          if (aca_3_Dots.style.display === "none") {
-            aca_3_Dots.style.display = "inline";
-            aca_3_BtnText.innerHTML = "Load more"; 
-            aca_3_MoreText.style.display = "none";
-          } else {
-            aca_3_Dots.style.display = "none";
-            aca_3_BtnText.innerHTML = "Load less"; 
-            aca_3_MoreText.style.display = "inline";
-          }
-        }
-    </script>
-
-    <style>
-        #aca-more {display: none;}
-        #aca-2-more {display: none;}
-        #aca-3-more {display: none;}
-    </style>
-
 </head>
 
 <body>
@@ -200,30 +143,39 @@
                             <a href="albums.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">ALBUMS<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="albums.html">所有專輯</a></li>
-                                <li><a href="album-introduce.html">專輯介紹</a></li>
+                                <!-- 商店 -->
+                                <li><a href="store.html">暢銷專輯系列</a></li>
+                                <li><a href="album-introduce.html">療癒專輯介紹</a></li>
                             </ul>
                         </li>
                     </ul>
 
                     <!-- 右側選項 -->
-                    <ul class="nav navbar-nav navbar-right">     
+                    <ul class="nav navbar-nav navbar-right">
+
                         <!-- 教育 -->                       
                         <li class="dropdown">
-                            <a href="story.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">EDUCATION<span class="caret"></span></a>
+                            <a href="lectures-speeches.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">EDUCATION<span class="caret"></span></a>
+                            <ul class="dropdown-menu">                                                           
+                                <li><a href="lectures-speeches.html">講座演講</a></li>                            
+                                <li><a href="academic-fields.html">學術領域</a></li>                                                 
+                            </ul>
+                        </li> 
+                        
+                        <!-- 品牌 -->
+                        <li class="dropdown">
+                            <a href="story.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn">BRAND<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="story.html">品牌故事</a></li> 
-                                <li><a href="project-planning.html">製作企劃</a></li>                                                            
-                                <li><a href="lectures-speeches.html">講座演講</a></li>                            
-                                <li><a href="academic-fields.html">學術領域</a></li>                          
+                                <li><a href="project-planning.html">製作企劃</a></li>                                                                                     
                                 <li><a href="collaborative-learning.html">共學共好</a></li>
-                                <li><a href="talent-unleashing.html">天賦開啟</a></li>                        
+                                <li><a href="talent-unleashing.html">音樂陪伴課程</a></li>
+                                <li><a href="guidance.html">音樂專業指導</a></li>                       
                             </ul>
-                        </li>  
+                        </li> 
+
                         <!-- 樂譜 -->
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
-
-                        <!-- 商店 -->
-                        <li><a href="store.html">STORE</a></li>
 
                         <!-- 聯絡我 -->
                         <li><a href="contact.html">CONTACT</a></li>                      
