@@ -69,6 +69,27 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script>
+        function mediaFunction() {
+          var mediaDots = document.getElementById("media-dots");
+          var mediaMoreText = document.getElementById("media-more");
+          var mediaBtnText = document.getElementById("media-myBtn");
+        
+          if (mediaDots.style.display === "none") {
+            mediaDots.style.display = "inline";
+            mediaBtnText.innerHTML = "Load more"; 
+            mediaMoreText.style.display = "none";
+          } else {
+            mediaDots.style.display = "none";
+            mediaBtnText.innerHTML = "Load less"; 
+            mediaMoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #media-more {display: none;}
+    </style>
 </head>
 
 <body>
@@ -229,7 +250,7 @@
                             <p style="font-size: 13px;">大千電台99.1「超級頭殼」節目專訪</p>
                         </a> 
 
-                        <a href="https://www.facebook.com/watch/?v=1736500456616746" target="_blank">
+                        <a href="https://www.facebook.com/kbronews04/videos/1736500456616746/" target="_blank">
                             <p style="font-size: 13px;">鹿港女兒-鋼琴家許惠鈞，王惠美立委專題報導</p>
                         </a> 
 
@@ -237,7 +258,7 @@
                             <p style="font-size: 13px;">自由時報與台北時報專題報導『人美心更美！美女鋼琴師返鄉教琴』</p>
                         </a> 
 
-                        <a href="https://www.facebook.com/watch/?v=1736500456616746" target="_blank">
+                        <a href="https://www.facebook.com/kbronews04/videos/1736500456616746/" target="_blank">
                             <p style="font-size: 13px;">彰化新聞台：在地最美專題報導『鋼琴美女老師許惠鈞，彈出鹿港美妙樂章』</p>
                         </a> 
 
@@ -799,7 +820,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="events.html">EVENTS</a></li>
-                    <li><a href="story.html">EDUCATION</a></li>                    
+                    <li><a href="lectures-speeches.html">EDUCATION</a></li>                    
                 </ul>                    
             </div>  
 
@@ -809,8 +830,8 @@
                 <div class="ws-footer-separator"></div>                                                     
                 <ul>
                     <li><a href="albums.html">ALBUMS</a></li>  
+                    <li><a href="story.html">BRAND</a></li>  
                     <li><a href="sheet-music.html">SHEET MUSIC</a></li>
-                    <li><a href="store.html">STORE</a></li>
                     <li><a href="contact.html">CONTACT</a></li>                        
                 </ul>  
             </div>  

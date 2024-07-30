@@ -69,6 +69,61 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script>
+        function acaFunction() {
+          var acaDots = document.getElementById("aca-dots");
+          var acaMoreText = document.getElementById("aca-more");
+          var acaBtnText = document.getElementById("aca-myBtn");
+        
+          if (acaDots.style.display === "none") {
+            acaDots.style.display = "inline";
+            acaBtnText.innerHTML = "Load more"; 
+            acaMoreText.style.display = "none";
+          } else {
+            acaDots.style.display = "none";
+            acaBtnText.innerHTML = "Load less"; 
+            acaMoreText.style.display = "inline";
+          }
+        }
+
+        function aca_2_Function() {
+          var aca_2_Dots = document.getElementById("aca-2-dots");
+          var aca_2_MoreText = document.getElementById("aca-2-more");
+          var aca_2_BtnText = document.getElementById("aca-2-myBtn");
+        
+          if (aca_2_Dots.style.display === "none") {
+            aca_2_Dots.style.display = "inline";
+            aca_2_BtnText.innerHTML = "Load more"; 
+            aca_2_MoreText.style.display = "none";
+          } else {
+            aca_2_Dots.style.display = "none";
+            aca_2_BtnText.innerHTML = "Load less"; 
+            aca_2_MoreText.style.display = "inline";
+          }
+        }
+
+        function aca_3_Function() {
+          var aca_3_Dots = document.getElementById("aca-3-dots");
+          var aca_3_MoreText = document.getElementById("aca-3-more");
+          var aca_3_BtnText = document.getElementById("aca-3-myBtn");
+        
+          if (aca_3_Dots.style.display === "none") {
+            aca_3_Dots.style.display = "inline";
+            aca_3_BtnText.innerHTML = "Load more"; 
+            aca_3_MoreText.style.display = "none";
+          } else {
+            aca_3_Dots.style.display = "none";
+            aca_3_BtnText.innerHTML = "Load less"; 
+            aca_3_MoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #aca-more {display: none;}
+        #aca-2-more {display: none;}
+        #aca-3-more {display: none;}
+    </style>
 </head>
 
 <body>
@@ -796,7 +851,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="events.html">EVENTS</a></li>
-                    <li><a href="story.html">EDUCATION</a></li>                    
+                    <li><a href="lectures-speeches.html">EDUCATION</a></li>                    
                 </ul>                    
             </div>  
 
@@ -806,11 +861,11 @@
                 <div class="ws-footer-separator"></div>                                                     
                 <ul>
                     <li><a href="albums.html">ALBUMS</a></li>  
+                    <li><a href="story.html">BRAND</a></li>  
                     <li><a href="sheet-music.html">SHEET MUSIC</a></li>
-                    <li><a href="store.html">STORE</a></li>
                     <li><a href="contact.html">CONTACT</a></li>                        
                 </ul>  
-            </div>  
+            </div>   
 
             <!-- Social Links -->
             <div class="col-sm-2 ws-footer-col">                    

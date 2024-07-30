@@ -69,6 +69,27 @@
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script>
+        function lecFunction() {
+          var lecDots = document.getElementById("lec-dots");
+          var lecMoreText = document.getElementById("lec-more");
+          var lecBtnText = document.getElementById("lec-myBtn");
+        
+          if (lecDots.style.display === "none") {
+            lecDots.style.display = "inline";
+            lecBtnText.innerHTML = "Load more"; 
+            lecMoreText.style.display = "none";
+          } else {
+            lecDots.style.display = "none";
+            lecBtnText.innerHTML = "Load less"; 
+            lecMoreText.style.display = "inline";
+          }
+        }
+    </script>
+
+    <style>
+        #lec-more {display: none;}
+    </style> 
 </head>
 
 <body>
@@ -496,7 +517,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="story.html">EDUCATION</a></li>                    
+                        <li><a href="lectures-speeches.html">EDUCATION</a></li>                    
                     </ul>                    
                 </div>  
 
@@ -506,8 +527,8 @@
                     <div class="ws-footer-separator"></div>                                                     
                     <ul>
                         <li><a href="albums.html">ALBUMS</a></li>  
+                        <li><a href="story.html">BRAND</a></li>  
                         <li><a href="sheet-music.html">SHEET MUSIC</a></li>
-                        <li><a href="store.html">STORE</a></li>
                         <li><a href="contact.html">CONTACT</a></li>                        
                     </ul>  
                 </div>  
