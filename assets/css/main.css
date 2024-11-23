@@ -2521,3 +2521,21 @@ div:has(>blockquote) {
 	font-style: italic;
 	color: #96a2a7;
   }
+
+/*------------------------------------
+  videobox
+------------------------------------*/
+.videobox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
