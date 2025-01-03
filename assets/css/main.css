@@ -175,11 +175,19 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	padding: 15px;
 	background-color: #d09494;	
 	color: #fff;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 .ws-btn-fullwidth:hover{
 	color: #fff;
 	background-color: #e0b6b6;
+}
+.ws-btn-90{	
+	font-size: 14px;	
+	width: 90%;
+	padding: 15px;
+	background-color: #d09494;	
+	color: #fff;
+	border-radius: 10px;
 }
 .btn-follow{	
 	padding: 15px 35px;
@@ -2538,4 +2546,11 @@ div:has(>blockquote) {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/*------------------------------------
+  暢銷樂譜
+------------------------------------*/
+.sheet-style:hover {
+	color:rgb(170, 100, 134);
 }
